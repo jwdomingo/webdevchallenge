@@ -18,7 +18,7 @@ html(lang="en")
       .container-fluid
         .row
           .col-md-3
-            .logo
+            .logo#home
               img(src='assets/header/logo.png', alt='DSGN Logo').img-responsive
               a(href='#') Associates Studio Design
             ul.list-inline
@@ -32,6 +32,12 @@ html(lang="en")
             nav
               #menu
                 i.fa.fa-bars
+              ul.list-inline
+                li: a(href='#home') Home
+                li: a(href='#projects') Projects
+                li: a(href='#studio') Studio
+                li: a(href='#news') News
+                li: a(href='#contact') Contact
             address
                 | 90802 California <br/>
                 | Long Beach <br/>
@@ -340,7 +346,7 @@ html(lang="en")
             p Praesent non mauris nec orci scelerisque faucibus. Nulla ac varius est. Aenean auctor nisl elit, nec sollicitudin lectus iaculis sed. Maecenas aliquam ligula vitae pharetra scelerisque.
             a(href'#') Read More
     
-    footer
+    footer#contact
       .container-fluid
         .row
           .col-md-6
