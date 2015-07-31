@@ -18,11 +18,11 @@ html(lang="en")
   body
     header
       .container-fluid
-        .row
+        .row.no-pad
           .col-md-3
             .logo#home
               img(src='assets/header/logo.png', alt='DSGN Logo').img-responsive
-              a(href='#') Associates Studio Design
+              a(href='#') Associates <br/> Studio <br/> Design
             ul.list-inline
               li: a(href'#'): i.fa.fa-facebook
               li: a(href'#'): i.fa.fa-twitter
@@ -31,27 +31,28 @@ html(lang="en")
           .col-md-5
             img(src='assets/header/armchairs.png', alt='Brown Leather Armchairs').img-responsive
           .col-md-4
-            nav
-              #menu
-                i.fa.fa-bars
-              ul.list-inline
-                li: a(href='#home') Home
-                li: a(href='#projects') Projects
-                li: a(href='#studio') Studio
-                li: a(href='#news') News
-                li: a(href='#contact') Contact
-            address
-                | 90802 California <br/>
-                | Long Beach <br/>
-                | PO Box 68789 <br/>
-                | 300 East Ocean Boulevard
-            a(href='tel:+6493456758') +64 9 345 6758
-            a(href='mailto:info@desgin-studio.com') info@desgin-studio.com
+            #address-block
+              nav
+                #menu
+                  i.fa.fa-bars
+                  ul.list-inline
+                    li: a(href='#home') Home
+                    li: a(href='#projects') Projects
+                    li: a(href='#studio') Studio
+                    li: a(href='#news') News
+                    li: a(href='#contact') Contact
+              address
+                  | 90802 California <br/>
+                  | Long Beach <br/>
+                  | PO Box 68789 <br/>
+                  | 300 East Ocean Boulevard
+              a(href='tel:+6493456758') +64 9 345 6758
+              a(href='mailto:info@desgin-studio.com') info@desgin-studio.com
     section#projects
       .container-fluid
-        .row
+        .row.no-pad
           .col-md-8
-            .row
+            .row.no-pad
               .col-md-6
                 .section-title.projects-title Projects
                 .section-menu.projects-menu
@@ -66,7 +67,7 @@ html(lang="en")
                 #project1
                  img(src='assets/projects/fondue.jpg', alt='Orange Stained Suspension Lamp').img-responsive
                 .project-caption.container-fixed
-                  .row
+                  .row.no-pad
                     .col-md-6
                       h3 Fondue
                       dl.dl-horizontal
@@ -87,12 +88,12 @@ html(lang="en")
                     .col-md-2
                       span +200
                   
-            .row
+            .row.no-pad
               .col-md-4
                 #project2
                   img(src='assets/projects/louis_xx.jpg', alt='Black School Chair').img-responsive
                   .project-caption.container-fixed
-                    .row
+                    .row.no-pad
                       .col-md-6
                         h3 Louis XX
                         dl.dl-horizontal
@@ -115,7 +116,7 @@ html(lang="en")
                 #project3
                   img(src='assets/projects/395-396_p22.jpg', alt='Brown Chair and Ottoman').img-responsive
                   .project-caption.container-fixed
-                    .row
+                    .row.no-pad
                       .col-md-6
                         h3 395-396 P22
                         dl.dl-horizontal
@@ -134,12 +135,12 @@ html(lang="en")
                       .col-md-2
                         span +200
                   
-            .row
+            .row.no-pad
               .col-md-9
                 #project4
                   img(src='assets/projects/sesann.jpg', alt='Black Distressed Leather Armchairs').img-responsive
                   .project-caption.container-fixed
-                    .row
+                    .row.no-pad
                       .col-md-6
                         h3 sesann
                         dl.dl-horizontal
@@ -162,7 +163,7 @@ html(lang="en")
                 #project5
                   img(src='assets/projects/alessi.jpg', alt='Metallic Soap Dish').img-responsive
                   .project-caption.container-fixed
-                    .row
+                    .row.no-pad
                       .col-md-6
                         h3 Alessi
                         dl.dl-horizontal
@@ -183,7 +184,7 @@ html(lang="en")
             #project6
               img(src='assets/projects/potter.jpg', alt='Jet Black Tea Pot').img-responsive
               .project-caption.container-fixed
-                .row
+                .row.no-pad
                   .col-md-6
                     h3 Potter
                     dl.dl-horizontal
@@ -200,7 +201,7 @@ html(lang="en")
             #project7
               img(src='assets/projects/tabano.jpg', alt='Brown Leather-Backed Office Chair').img-responsive
               .project-caption.container-fixed
-                .row
+                .row.no-pad
                   .col-md-6
                     h3 Tabano
                     dl.dl-horizontal
@@ -222,7 +223,7 @@ html(lang="en")
             #project8
               img(src='assets/projects/fiji.jpg', alt='Yellow Armchair').img-responsive
               .project-caption.container-fixed
-                .row
+                .row.no-pad
                   .col-md-6
                     h3 Fiji
                     dl.dl-horizontal
@@ -250,7 +251,7 @@ html(lang="en")
                 
     section#studio
       .container-fluid
-        .row
+        .row.no-pad
           .col-md-4
             .section-title.studio-title Studio
           
@@ -330,7 +331,7 @@ html(lang="en")
           
     section#news
       .container-fluid
-        .row
+        .row.no-pad
           .col-md-4
             .section-title.news-title News
           .col-md-4
@@ -350,13 +351,13 @@ html(lang="en")
     
     footer#contact
       .container-fluid
-        .row
+        .row.no-pad
           .col-md-6
             img(src='assets/footer/map.jpg', alt='Long Beach Map').img-responsive
           .col-md-6
             .logo
               img(src='assets/header/logo.png', alt='DSGN Logo').img-responsive
-              a(href='#') Associates Studio Design
+              a(href='#') Associates <br/> Studio <br/> Design
             ul.list-inline
               li: a(href'#'): i.fa.fa-facebook
               li: a(href'#'): i.fa.fa-twitter
