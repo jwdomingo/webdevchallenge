@@ -114,11 +114,18 @@ a:link, a:visited {
       background-position: center; }
       #address-block nav label.toggle:hover {
         border: 3px #337ab7 solid;
+        -webkit-transition: all 0.15s ease-out 0s;
+        -moz-transition: all 0.15s ease-out 0s;
+        transition: all 0.15s ease-out 0s;
         background-image: url("../assets/header/menu-hover.png");
         background-repeat: no-repeat;
         background-position: center; }
     #address-block nav #menu {
       visibility: hidden;
+      opacity: 0;
+      -webkit-transition: all 0.15s ease-out 0s;
+      -moz-transition: all 0.15s ease-out 0s;
+      transition: all 0.15s ease-out 0s;
       position: absolute;
       top: 0px;
       right: 250px;
@@ -137,7 +144,10 @@ a:link, a:visited {
           #address-block nav #menu ul li a {
             padding: 42.5px 50px; }
             #address-block nav #menu ul li a:hover {
-              color: #333; }
+              color: #333;
+              -webkit-transition: all 0.15s ease-out 0s;
+              -moz-transition: all 0.15s ease-out 0s;
+              transition: all 0.15s ease-out 0s; }
           #address-block nav #menu ul li label.close-menu {
             display: table-cell;
             vertical-align: middle;
@@ -153,11 +163,18 @@ a:link, a:visited {
               color: #333;
               background-image: url("../assets/header/close-hover.png");
               background-repeat: no-repeat;
-              background-position: center; }
+              background-position: center;
+              background--webkit-transition: all 0.15s ease-out 0s;
+              background--moz-transition: all 0.15s ease-out 0s;
+              background-transition: all 0.15s ease-out 0s; }
     #address-block nav input#toggler {
       display: none; }
       #address-block nav input#toggler:checked + #menu {
-        visibility: visible; }
+        visibility: visible;
+        opacity: 1;
+        -webkit-transition: all 0.15s ease-out 0s;
+        -moz-transition: all 0.15s ease-out 0s;
+        transition: all 0.15s ease-out 0s; }
   #address-block address {
     position: absolute;
     top: 200px;

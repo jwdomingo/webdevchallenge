@@ -140,6 +140,7 @@ a:link, a:visited
 
       &:hover
         border: 3px $hover-link solid
+        +transition
         background:
           image: url('../assets/header/menu-hover.png')
           repeat: no-repeat
@@ -147,6 +148,8 @@ a:link, a:visited
 
     #menu
       visibility: hidden
+      opacity: 0
+      +transition
       position: absolute
       top: 0px
       right: 250px
@@ -169,6 +172,7 @@ a:link, a:visited
 
             &:hover
               color: $dark-txt
+              +transition
 
           label.close-menu
             display: table-cell
@@ -189,12 +193,15 @@ a:link, a:visited
                 image: url('../assets/header/close-hover.png')
                 repeat: no-repeat
                 position: center
+                +transition
 
     input#toggler
       display: none
 
       &:checked + #menu
         visibility: visible
+        opacity: 1
+        +transition
 
   address
     +position(absolute, 200px 0 0 0px)
