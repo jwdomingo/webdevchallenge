@@ -59,6 +59,7 @@ $hover-link: #337ab7
 
 .row-fix
   display: flex !important
+  display: -webkit-flex !important
   +transition
 
 .row-collapse
@@ -216,7 +217,7 @@ ul.accent-text
       +transition
       position: absolute
       top: 0px
-      right: 75%
+      right: 25%
       z-index: 2
 
       ul
@@ -335,6 +336,15 @@ ul.accent-text
       li:first-child a
         color: $dark-txt
         margin-bottom: 5px
+
+        &:hover:before
+          content: ''
+          margin-left: 0px
+
+
+      a:hover:before
+        content: '⟶ '
+        margin-left: -20px
 
 .project-caption
   position: absolute

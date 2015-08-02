@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300);
 .container-fluid {
   padding: 0px; }
@@ -37,6 +38,7 @@
 
 .row-fix {
   display: flex !important;
+  display: -webkit-flex !important;
   -webkit-transition: all 0.15s ease-out 0s;
   -moz-transition: all 0.15s ease-out 0s;
   transition: all 0.15s ease-out 0s; }
@@ -180,7 +182,7 @@ ul.accent-text {
       transition: all 0.15s ease-out 0s;
       position: absolute;
       top: 0px;
-      right: 75%;
+      right: 25%;
       z-index: 2; }
       #header-block nav #menu ul {
         display: table; }
@@ -291,6 +293,12 @@ ul.accent-text {
       #timeline .triangle .triangle-content li:first-child a {
         color: #333;
         margin-bottom: 5px; }
+        #timeline .triangle .triangle-content li:first-child a:hover:before {
+          content: "";
+          margin-left: 0px; }
+      #timeline .triangle .triangle-content a:hover:before {
+        content: "⟶ ";
+        margin-left: -20px; }
 
 .project-caption {
   position: absolute;
