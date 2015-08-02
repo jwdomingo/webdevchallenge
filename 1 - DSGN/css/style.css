@@ -24,19 +24,19 @@
     vertical-align: top;
     position: relative;
     overflow: hidden; }
-  .row [id="header-panel"] {
-    background-color: #7bcbc1;
-    color: white;
-    overflow: visible; }
-  .row [id="projects-panel"], .row .timeline-menu {
-    background-color: #ebb240;
-    color: white; }
-  .row [id="studio-panel"] {
-    background-color: #ff9b6d;
-    color: white; }
-  .row [id="news-panel"] {
-    background-color: #d4edbf;
-    color: white; }
+    .row [class*="col-"][id="header-panel"] {
+      background-color: #7bcbc1;
+      color: white;
+      overflow: visible; }
+    .row [class*="col-"][id="projects-panel"], .row [class*="col-"] .timeline-menu {
+      background-color: #ebb240;
+      color: white; }
+    .row [class*="col-"][id="studio-panel"] {
+      background-color: #ff9b6d;
+      color: white; }
+    .row [class*="col-"][id="news-panel"] {
+      background-color: #d4edbf;
+      color: white; }
 
 body {
   font-family: "Roboto Condensed", sans-serif;
@@ -75,7 +75,7 @@ ul.accent-text {
 
 .triangle, .triangle-line {
   width: 100%;
-  height: 0;
+  height: 0px;
   padding-top: 100%;
   overflow: hidden;
   position: absolute; }
