@@ -56,10 +56,10 @@ html(lang="en")
                 a(href='mailto:info@desgin-studio.com') info@desgin-studio.com            
     section#projects
       .container-fluid
-        .row.no-pad
-          .col-md-8
-            .row.no-pad
-              .col-md-6#projects-panel
+        .row.no-pad.row-collapse
+          .col-xs-12.col-sm-8
+            .row.no-pad.row-fix
+              #projects-panel.col-xs-6
                 #projects-block
                   ul.list-unstyled.light-text
                     li: a(href='#') All
@@ -70,177 +70,41 @@ html(lang="en")
                 .triangle-line
                 .triangle.triangle-projects
                   .triangle-content Projects
-                    
-              .col-md-6
-                #project1
-                  img(src='assets/projects/fondue.jpg', alt='Orange Stained Suspension Lamp').img-responsive
-                  .project-caption.container-fixed
-                    .row.no-pad
-                      .col-md-6
-                        h3 Fondue
-                        dl.dl-horizontal
-                          dt Project Assistant:
-                          dd Francesco Compieri
-                          dt Material:
-                          dd Glass and Metal
-                          dt Typology:
-                          dd Suspension Lamp
-                          dt Client:
-                          dd David Design
-                          dt Year:
-                          dd 2004
-                      .col-md-2
-                        a(href='#'): i.fa.fa-long-arrow-right  View Project                  
-                      .col-md-2
-                        a(href='#'): i.fa.fa-heart-o
-                      .col-md-2
-                        span +200                
-                        
-            .row.no-pad
-            
-              .col-md-4
-                #project2
-                  img(src='assets/projects/louis_xx.jpg', alt='Black School Chair').img-responsive
-                  .project-caption.container-fixed
-                    .row.no-pad
-                      .col-md-6
-                        h3 Louis XX
-                        dl.dl-horizontal
-                          dt Designer:
-                          dd Phillipe Starck
-                          dt Typology:
-                          dd Chairs
-                          dt Client:
-                          dd Vitra
-                          dt Year:
-                          dd 2012
-                      .col-md-2
-                        a(href='#'): i.fa.fa-long-arrow-right  View Project                  
-                      .col-md-2
-                        a(href='#'): i.fa.fa-heart-o
-                      .col-md-2
-                        span +200                    
-                        
-              .col-md-8
-                #project3
-                  img(src='assets/projects/395-396_p22.jpg', alt='Brown Chair and Ottoman').img-responsive
-                  .project-caption.container-fixed
-                    .row.no-pad
-                      .col-md-6
-                        h3 395-396 P22
-                        dl.dl-horizontal
-                          dt Designer:
-                          dd Phillipe Starck
-                          dt Typology:
-                          dd Chairs
-                          dt Client:
-                          dd Vitra
-                          dt Year:
-                          dd 2012
-                      .col-md-2
-                        a(href='#'): i.fa.fa-long-arrow-right  View Project                  
-                      .col-md-2
-                        a(href='#'): i.fa.fa-heart-o
-                      .col-md-2
-                        span +200
                   
-              .clearfix.visible-md-block
-              
-              .col-md-9
-                #project4
-                  img(src='assets/projects/sesann.jpg', alt='Black Distressed Leather Armchairs').img-responsive
-                  .project-caption.container-fixed
-                    .row.no-pad
-                      .col-md-6
-                        h3 sesann
-                        dl.dl-horizontal
-                          dt Designer:
-                          dd Gianfranco Frattini
-                          dt Typology:
-                          dd Armchairs
-                          dt Client:
-                          dd Cassina
-                          dt Year:
-                          dd 1970
-                      .col-md-2
-                        a(href='#'): i.fa.fa-long-arrow-right  View Project                  
-                      .col-md-2
-                        a(href='#'): i.fa.fa-heart-o
-                      .col-md-2
-                        span +200
-                  
-              .col-md-3
-                #project5
-                  img(src='assets/projects/alessi.jpg', alt='Metallic Soap Dish').img-responsive
-                  .project-caption.container-fixed
-                    .row.no-pad
-                      .col-md-6
-                        h3 Alessi
-                        dl.dl-horizontal
-                          dt Designer:
-                          dd Piero Lissoni
-                          dt Client:
-                          dd Alessi
-                          dt Year:
-                          dd 2013
-                      .col-md-2
-                        a(href='#'): i.fa.fa-long-arrow-right  View Project                  
-                      .col-md-2
-                        a(href='#'): i.fa.fa-heart-o
-                      .col-md-2
-                        span +200
-                  
-          .col-md-4
-            #project6
-              img(src='assets/projects/potter.jpg', alt='Jet Black Tea Pot').img-responsive
-              .project-caption.container-fixed
+              #project-no1.col-xs-6.project-caption.container-fluid
                 .row.no-pad
                   .col-md-6
-                    h3 Potter
+                    h3 Fondue
                     dl.dl-horizontal
-                      dt For
-                      dd Stelton
-                    p Potter focuses on the functionality and process of preparing tea. a big sieve allows the flavor of to evenly brewed.
-                  .col-md-2
-                    a(href='#'): i.fa.fa-long-arrow-right  View Project                  
-                  .col-md-2
-                    a(href='#'): i.fa.fa-heart-o
-                  .col-md-2
-                    span +200
-              
-            #project7
-              img(src='assets/projects/tabano.jpg', alt='Brown Leather-Backed Office Chair').img-responsive
-              .project-caption.container-fixed
-                .row.no-pad
-                  .col-md-6
-                    h3 Tabano
-                    dl.dl-horizontal
-                      dt Designer:
-                      dd Patricia Urquiola
+                      dt Project Assistant:
+                      dd Francesco Compieri
+                      dt Material:
+                      dd Glass and Metal
                       dt Typology:
-                      dd Armchairs
+                      dd Suspension Lamp
                       dt Client:
-                      dd B&B Italia
+                      dd David Design
                       dt Year:
-                      dd 2014
+                      dd 2004
                   .col-md-2
                     a(href='#'): i.fa.fa-long-arrow-right  View Project                  
                   .col-md-2
                     a(href='#'): i.fa.fa-heart-o
                   .col-md-2
                     span +200
-              
-            #project8
-              img(src='assets/projects/fiji.jpg', alt='Yellow Armchair').img-responsive
-              .project-caption.container-fixed
+                    
+            .row.no-pad.row-fix
+              #project-no2.col-xs-12.col-sm-3.project-caption.container-fluid
                 .row.no-pad
                   .col-md-6
-                    h3 Fiji
+                    h3 Louis XX
                     dl.dl-horizontal
                       dt Designer:
-                      dd Cuno Frommherz
+                      dd Phillipe Starck
                       dt Typology:
-                      dd Armchairs
+                      dd Chairs
+                      dt Client:
+                      dd Vitra
                       dt Year:
                       dd 2012
                   .col-md-2
@@ -249,15 +113,126 @@ html(lang="en")
                     a(href='#'): i.fa.fa-heart-o
                   .col-md-2
                     span +200
+              #project-no3.col-xs-12.col-sm-9.project-caption.container-fluid
+                .row.no-pad
+                  .col-md-6
+                    h3 395-396 P22
+                    dl.dl-horizontal
+                      dt Designer:
+                      dd Phillipe Starck
+                      dt Typology:
+                      dd Chairs
+                      dt Client:
+                      dd Vitra
+                      dt Year:
+                      dd 2012
+                  .col-md-2
+                    a(href='#'): i.fa.fa-long-arrow-right  View Project                  
+                  .col-md-2
+                    a(href='#'): i.fa.fa-heart-o
+                  .col-md-2
+                    span +200
+                  
+            .row.no-pad.row-fix
+              
+              #project-no4.col-xs-9.project-caption.container-fluid
+                .row.no-pad
+                  .col-md-6
+                    h3 Sesann
+                    dl.dl-horizontal
+                      dt Designer:
+                      dd Gianfranco Frattini
+                      dt Typology:
+                      dd Armchairs
+                      dt Client:
+                      dd Cassina
+                      dt Year:
+                      dd 1970
+                  .col-md-2
+                    a(href='#'): i.fa.fa-long-arrow-right  View Project                  
+                  .col-md-2
+                    a(href='#'): i.fa.fa-heart-o
+                  .col-md-2
+                    span +200
+                  
+              #project-no5.col-xs-3.project-caption.container-fluid
+                .row.no-pad
+                  .col-md-6
+                    h3 Alessi
+                    dl.dl-horizontal
+                      dt Designer:
+                      dd Piero Lissoni
+                      dt Client:
+                      dd Alessi
+                      dt Year:
+                      dd 2013
+                  .col-md-2
+                    a(href='#'): i.fa.fa-long-arrow-right  View Project                  
+                  .col-md-2
+                    a(href='#'): i.fa.fa-heart-o
+                  .col-md-2
+                    span +200
+                  
+          #project-no6.col-xs-12.col-sm-4.project-caption.container-fluid
+            .row.no-pad
+              .col-md-6
+                h3 Potter
+                dl.dl-horizontal
+                  dt For
+                  dd Stelton
+                p Potter focuses on the functionality and process of preparing tea. a big sieve allows the flavor of to evenly brewed.
+              .col-md-2
+                a(href='#'): i.fa.fa-long-arrow-right  View Project                  
+              .col-md-2
+                a(href='#'): i.fa.fa-heart-o
+              .col-md-2
+                span +200  
+          #project-no7.col-xs-12.col-sm-4.project-caption.container-fluid
+            .row.no-pad
+              .col-md-6
+                h3 Tabano
+                dl.dl-horizontal
+                  dt Designer:
+                  dd Patricia Urquiola
+                  dt Typology:
+                  dd Armchairs
+                  dt Client:
+                  dd B&B Italia
+                  dt Year:
+                  dd 2014
+              .col-md-2
+                a(href='#'): i.fa.fa-long-arrow-right  View Project                  
+              .col-md-2
+                a(href='#'): i.fa.fa-heart-o
+              .col-md-2
+                span +200
             
-            .section-menu.timeline-menu
-              ul.list-unstyled
-                li Timeline
-                li: a(href='#') 2015
-                li: a(href='#') 2014
-                li: a(href='#') 2013
-                li: a(href='#') 2012
-                li: a(href='#') 2011
+          #project-no8.col-xs-12.col-sm-4.project-caption.container-fluid
+            .row.no-pad
+              .col-md-6
+                h3 Fiji
+                dl.dl-horizontal
+                  dt Designer:
+                  dd Cuno Frommherz
+                  dt Typology:
+                  dd Armchairs
+                  dt Year:
+                  dd 2012
+              .col-md-2
+                a(href='#'): i.fa.fa-long-arrow-right  View Project                  
+              .col-md-2
+                a(href='#'): i.fa.fa-heart-o
+              .col-md-2
+                span +200
+          
+          .section-menu.timeline-menu
+            ul.list-unstyled
+              li Timeline
+              li: a(href='#') 2015
+              li: a(href='#') 2014
+              li: a(href='#') 2013
+              li: a(href='#') 2012
+              li: a(href='#') 2011
                 
     section#studio
       .container-fluid

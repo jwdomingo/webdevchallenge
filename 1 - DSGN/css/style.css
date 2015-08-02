@@ -7,11 +7,12 @@
     padding-left: 0px;
     padding-right: 0px; } }
 .no-pad {
-  margin-right: 0;
-  margin-left: 0; }
+  margin-right: 0px;
+  margin-left: 0px; }
   .no-pad > [class*='col-'] {
     padding-right: 0;
     padding-left: 0;
+    min-height: 100px;
     -webkit-transition: 2s;
     -moz-transition: 2s;
     transition: 2s; }
@@ -37,6 +38,18 @@
     .row [class*="col-"][id="news-panel"] {
       background-color: #d4edbf;
       color: white; }
+
+.row-fix {
+  display: flex !important;
+  -webkit-transition: all 0.15s ease-out 0s;
+  -moz-transition: all 0.15s ease-out 0s;
+  transition: all 0.15s ease-out 0s; }
+
+.row-collapse [class*="col-"] {
+  float: left !important;
+  -webkit-transition: all 0.15s ease-out 0s;
+  -moz-transition: all 0.15s ease-out 0s;
+  transition: all 0.15s ease-out 0s; }
 
 body {
   font-family: "Roboto Condensed", sans-serif;
@@ -235,12 +248,46 @@ ul.accent-text {
     margin: 0px;
     line-height: 1.1em; }
 
+[id*='project-no'] {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+#project-no1 {
+  height: 350px;
+  background-image: url("../assets/projects/fondue.jpg"); }
+
+#project-no2 {
+  height: 465px;
+  background-image: url("../assets/projects/louis_xx.jpg"); }
+
+#project-no3 {
+  height: 465px;
+  background-image: url("../assets/projects/395-396_p22.jpg"); }
+
+#project-no4 {
+  height: 300px;
+  background-image: url("../assets/projects/sesann.jpg"); }
+
+#project-no5 {
+  height: 300px;
+  background-image: url("../assets/projects/alessi.jpg"); }
+
+#project-no6 {
+  height: 250px;
+  background-image: url("../assets/projects/potter.jpg"); }
+
+#project-no7 {
+  height: 465px;
+  background-image: url("../assets/projects/tabano.jpg"); }
+
+#project-no8 {
+  height: 250px;
+  background-image: url("../assets/projects/fiji.jpg"); }
+
 .project-caption {
   position: absolute;
   top: 0px;
   left: 0px; }
-
-.col-md-6#project1 {
-  background-color: white; }
 
 /*# sourceMappingURL=style.css.map */

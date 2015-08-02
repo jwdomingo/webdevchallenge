@@ -24,12 +24,13 @@ $hover-link: #337ab7
 
 // Remove Bootstrap Grid Gutters
 .no-pad
-  margin-right: 0
-  margin-left: 0
+  margin-right: 0px
+  margin-left: 0px
 
   > [class*='col-']
     padding-right: 0
     padding-left: 0
+    min-height: 100px
     +transition(2s)
 
 // Row-Height Columns
@@ -59,6 +60,26 @@ $hover-link: #337ab7
     &[id="news-panel"]
       background-color: $accent
       color: $light-txt
+
+.row-fix
+  display: flex !important
+  +transition
+
+.row-collapse
+  [class*="col-"]
+    float: left !important
+    +transition
+
+//img.width-fix
+  border: 1px red solid
+  height: 100%
+  width: 100%
+
+//img.height-fix
+  border: 1px red solid
+  object-fit: cover
+  height: 100%
+  //height: 100%
 
 body
   font-family: 'Roboto Condensed', sans-serif
@@ -266,10 +287,46 @@ ul.accent-text
 // PROJECTS //
 //////////////
 
+[id*='project-no']
+  background:
+    size: cover
+    repeat: no-repeat
+    position: center
+
+#project-no1
+  height: 350px
+  background:
+    image: url('../assets/projects/fondue.jpg')
+#project-no2
+  height: 465px
+  background:
+    image: url('../assets/projects/louis_xx.jpg')
+#project-no3
+  height: 465px
+  background:
+    image: url('../assets/projects/395-396_p22.jpg')
+#project-no4
+  height: 300px
+  background:
+    image: url('../assets/projects/sesann.jpg')
+#project-no5
+  height: 300px
+  background:
+    image: url('../assets/projects/alessi.jpg')
+#project-no6
+  height: 250px
+  background:
+    image: url('../assets/projects/potter.jpg')
+#project-no7
+  height: 465px
+  background:
+    image: url('../assets/projects/tabano.jpg')
+#project-no8
+  height: 250px
+  background:
+    image: url('../assets/projects/fiji.jpg')
+
 .project-caption
   position: absolute
   top: 0px
   left: 0px
-
-.col-md-6#project1
-  background-color: white
