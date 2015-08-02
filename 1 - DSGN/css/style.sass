@@ -46,20 +46,16 @@ $hover-link: #337ab7
 
     &[id="header-panel"]
       background-color: $primary
-      color: $light-txt
       overflow: visible
 
-    &[id="projects-panel"], .timeline-menu
+    &[id="projects-panel"]
       background-color: $secondary
-      color: $light-txt
 
     &[id="studio-panel"]
       background-color: $tertiary
-      color: $light-txt
 
     &[id="news-panel"]
       background-color: $accent
-      color: $light-txt
 
 .row-fix
   display: flex !important
@@ -325,6 +321,20 @@ ul.accent-text
   height: 250px
   background:
     image: url('../assets/projects/fiji.jpg')
+
+#timeline
+  height: 150px
+  background-color: $secondary
+
+  .triangle
+    font-size: 1em
+
+    .triangle-content
+      bottom: 15px
+
+      li:first-child a
+        color: $dark-txt
+        margin-bottom: 5px
 
 .project-caption
   position: absolute

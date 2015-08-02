@@ -27,17 +27,13 @@
     overflow: hidden; }
     .row [class*="col-"][id="header-panel"] {
       background-color: #7bcbc1;
-      color: white;
       overflow: visible; }
-    .row [class*="col-"][id="projects-panel"], .row [class*="col-"] .timeline-menu {
-      background-color: #ebb240;
-      color: white; }
+    .row [class*="col-"][id="projects-panel"] {
+      background-color: #ebb240; }
     .row [class*="col-"][id="studio-panel"] {
-      background-color: #ff9b6d;
-      color: white; }
+      background-color: #ff9b6d; }
     .row [class*="col-"][id="news-panel"] {
-      background-color: #d4edbf;
-      color: white; }
+      background-color: #d4edbf; }
 
 .row-fix {
   display: flex !important;
@@ -284,6 +280,17 @@ ul.accent-text {
 #project-no8 {
   height: 250px;
   background-image: url("../assets/projects/fiji.jpg"); }
+
+#timeline {
+  height: 150px;
+  background-color: #ebb240; }
+  #timeline .triangle {
+    font-size: 1em; }
+    #timeline .triangle .triangle-content {
+      bottom: 15px; }
+      #timeline .triangle .triangle-content li:first-child a {
+        color: #333;
+        margin-bottom: 5px; }
 
 .project-caption {
   position: absolute;

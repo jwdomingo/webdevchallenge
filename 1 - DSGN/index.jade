@@ -69,7 +69,7 @@ html(lang="en")
                     li: a(href='#') Studio Lab
                 .triangle-line
                 .triangle.triangle-projects
-                  .triangle-content Projects
+                  .triangle-content.light-text Projects
                   
               #project-no1.col-xs-6.project-caption.container-fluid
                 .row.no-pad
@@ -225,14 +225,17 @@ html(lang="en")
               .col-md-2
                 span +200
           
-          .section-menu.timeline-menu
-            ul.list-unstyled
-              li Timeline
-              li: a(href='#') 2015
-              li: a(href='#') 2014
-              li: a(href='#') 2013
-              li: a(href='#') 2012
-              li: a(href='#') 2011
+          #timeline.col-xs-12.col-sm-4.light-text            
+            .triangle-line
+            .triangle.triangle-projects
+              .triangle-content
+                ul.list-unstyled
+                  li: a(href='#timeline') Timeline
+                  li: a(href='#') 2015
+                  li: a(href='#') 2014
+                  li: a(href='#') 2013
+                  li: a(href='#') 2012
+                  li: a(href='#') 2011
                 
     section#studio
       .container-fluid
@@ -268,9 +271,7 @@ html(lang="en")
                   li ac lobortis elit
                   li commodo placerat.
                   li Vivamus
-              
-          .clearfix
-          
+        .row.no-pad
           .col-md-3.col-md-offset-1
             h6 Staff.
             p Sit Sit amet laoreet sapien dictum. Sed eget eros augue. Pellentesque tempor mi sit amet nisi tincidunt tincidunt. Fusce malesuada lectus sed mauris pharetra faucibus.
