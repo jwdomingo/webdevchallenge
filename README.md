@@ -11,5 +11,9 @@ Designs were marked up from free PSD design resources found online.
 Source: [The Uncreative Lab](http://theuncreativelab.com/portfolio/dsgn-free-psd-template/)
 
 ## Frontend Stack
-- HTML (Jade)
-- CSS (Sass, Bourbon)
+1. HTML
+  * ([Jade](http://jade-lang.com/))
+2. CSS
+  * [Bootstrap](http://http://getbootstrap.com/)
+  * [Sass](http://sass-lang.com/)
+  * [Bourbon](http://bourbon.io/)
