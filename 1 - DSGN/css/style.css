@@ -22,18 +22,20 @@
     float: none;
     display: table-cell;
     vertical-align: top;
-    position: relative; }
+    position: relative;
+    overflow: hidden; }
   .row [id="header-panel"] {
     background-color: #7bcbc1;
-    color: white; }
+    color: white;
+    overflow: visible; }
   .row [id="projects-panel"], .row .timeline-menu {
     background-color: #ebb240;
     color: white; }
   .row [id="studio-panel"] {
-    background-color: #ff9bd6;
+    background-color: #ff9b6d;
     color: white; }
   .row [id="news-panel"] {
-    background-color: #d43dbf;
+    background-color: #d4edbf;
     color: white; }
 
 body {
@@ -98,16 +100,29 @@ ul.accent-text {
 
 .triangle {
   bottom: -1px;
-  right: -1px; }
+  right: -1px;
+  font-size: 2.75em; }
   .triangle:after {
     content: "";
-    color: black;
     display: block;
     width: 0;
     height: 0;
     margin-top: -500px;
-    border-top: 500px solid transparent;
+    border-top: 500px solid transparent; }
+
+.triangle-header.triangle {
+  font-size: 1em; }
+  .triangle-header.triangle:after {
     border-right: 500px solid #7bcbc1; }
+
+.triangle-projects.triangle:after {
+  border-right: 500px solid #ebb240; }
+
+.triangle-studio.triangle:after {
+  border-right: 500px solid #ff9b6d; }
+
+.triangle-news.triangle:after {
+  border-right: 500px solid #d4edbf; }
 
 .logo {
   margin: 50px 0 0 170px; }
@@ -118,14 +133,14 @@ ul.accent-text {
     text-align: center;
     margin-top: 40px; }
 
-#address-block {
+#header-block {
   position: relative;
   z-index: 2; }
-  #address-block nav {
+  #header-block nav {
     position: absolute;
     top: 50px;
     left: 16%; }
-    #address-block nav label.toggle {
+    #header-block nav label.toggle {
       border: 3px white solid;
       padding: 50.5px 50px;
       margin: 0px;
@@ -140,7 +155,7 @@ ul.accent-text {
       background-image: url("../assets/header/menu.png");
       background-repeat: no-repeat;
       background-position: center; }
-      #address-block nav label.toggle:hover {
+      #header-block nav label.toggle:hover {
         border: 3px #337ab7 solid;
         -webkit-transition: all 0.15s ease-out 0s;
         -moz-transition: all 0.15s ease-out 0s;
@@ -148,7 +163,7 @@ ul.accent-text {
         background-image: url("../assets/header/menu-hover.png");
         background-repeat: no-repeat;
         background-position: center; }
-    #address-block nav #menu {
+    #header-block nav #menu {
       visibility: hidden;
       opacity: 0;
       -webkit-transition: all 0.15s ease-out 0s;
@@ -158,9 +173,9 @@ ul.accent-text {
       top: 0px;
       right: 75%;
       z-index: 2; }
-      #address-block nav #menu ul {
+      #header-block nav #menu ul {
         display: table; }
-        #address-block nav #menu ul li {
+        #header-block nav #menu ul li {
           display: table-cell;
           vertical-align: middle;
           height: 107px;
@@ -169,14 +184,14 @@ ul.accent-text {
           margin: 0px;
           padding: 0px;
           text-align: center; }
-          #address-block nav #menu ul li a {
+          #header-block nav #menu ul li a {
             padding: 42.5px 50px; }
-            #address-block nav #menu ul li a:hover {
+            #header-block nav #menu ul li a:hover {
               color: #333;
               -webkit-transition: all 0.15s ease-out 0s;
               -moz-transition: all 0.15s ease-out 0s;
               transition: all 0.15s ease-out 0s; }
-          #address-block nav #menu ul li label.close-menu {
+          #header-block nav #menu ul li label.close-menu {
             display: table-cell;
             vertical-align: middle;
             padding: 52.5px 52.5px;
@@ -187,7 +202,7 @@ ul.accent-text {
             background-image: url("../assets/header/close.png");
             background-repeat: no-repeat;
             background-position: center; }
-            #address-block nav #menu ul li label.close-menu:hover {
+            #header-block nav #menu ul li label.close-menu:hover {
               color: #333;
               background-image: url("../assets/header/close-hover.png");
               background-repeat: no-repeat;
@@ -195,9 +210,9 @@ ul.accent-text {
               background--webkit-transition: all 0.15s ease-out 0s;
               background--moz-transition: all 0.15s ease-out 0s;
               background-transition: all 0.15s ease-out 0s; }
-    #address-block nav input#toggler {
+    #header-block nav input#toggler {
       display: none; }
-      #address-block nav input#toggler:checked + label.toggle {
+      #header-block nav input#toggler:checked + label.toggle {
         -webkit-transform: translateX(-400px);
         -moz-transform: translateX(-400px);
         -ms-transform: translateX(-400px);
@@ -207,13 +222,13 @@ ul.accent-text {
         -webkit-transition: 2s;
         -moz-transition: 2s;
         transition: 2s; }
-      #address-block nav input#toggler:checked ~ #menu {
+      #header-block nav input#toggler:checked ~ #menu {
         visibility: visible;
         opacity: 1;
         -webkit-transition: all 0.15s ease-out 0s;
         -moz-transition: all 0.15s ease-out 0s;
         transition: all 0.15s ease-out 0s; }
-  #address-block address {
+  #header-block address {
     position: absolute;
     top: 180px;
     left: 5%;
@@ -223,8 +238,9 @@ ul.accent-text {
 .project-caption {
   position: absolute;
   top: 0px;
-  right: 0;
-  bottom: 0;
   left: 0px; }
+
+.col-md-6#project1 {
+  background-color: white; }
 
 /*# sourceMappingURL=style.css.map */

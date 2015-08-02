@@ -6,8 +6,8 @@
 // Color Pallete
 $primary: #7bcbc1
 $secondary: #ebb240
-$tertiary: #ff9bd6
-$accent: #d43dbf
+$tertiary: #ff9b6d
+$accent: #d4edbf
 $bkg-color: #e9eae2
 $dark-txt: #333
 $light-txt: white
@@ -41,10 +41,12 @@ $hover-link: #337ab7
     display: table-cell
     vertical-align: top
     position: relative
+    overflow: hidden
 
   [id="header-panel"]
     background-color: $primary
     color: $light-txt
+    overflow: visible
 
   [id="projects-panel"], .timeline-menu
     background-color: $secondary
@@ -125,15 +127,29 @@ ul.accent-text
 .triangle
   bottom: -1px
   right: -1px
+  font-size: 2.75em
+
   &:after
     content: ""
-    color: black
     display: block
     width: 0
     height: 0
     margin-top: -500px
     border-top: 500px solid transparent
+
+.triangle-header.triangle
+  font-size: 1em
+  &:after
     border-right: 500px solid $primary
+
+.triangle-projects.triangle:after
+  border-right: 500px solid $secondary
+
+.triangle-studio.triangle:after
+  border-right: 500px solid $tertiary
+
+.triangle-news.triangle:after
+  border-right: 500px solid $accent
 
 ////////////
 // HEADER //
@@ -149,7 +165,7 @@ ul.accent-text
     text-align: center
     margin-top: 40px
 
-#address-block
+#header-block
   position: relative
   z-index: 2
 
@@ -246,5 +262,14 @@ ul.accent-text
     margin: 0px
     line-height: 1.1em
 
+//////////////
+// PROJECTS //
+//////////////
+
 .project-caption
-  +position(absolute, 0px 0 0 0px)
+  position: absolute
+  top: 0px
+  left: 0px
+
+.col-md-6#project1
+  background-color: white
