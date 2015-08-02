@@ -31,25 +31,29 @@ html(lang="en")
           .col-md-5
             img(src='assets/header/armchairs.png', alt='Brown Leather Armchairs').img-responsive
           .col-md-4#header-panel
+            #address-block.light-text
+              nav
+                label(for='toggler').toggle.light-text
+                input(type='checkbox' id='toggler')
+                #menu
+                  ul.list-inline
+                    li: a(href='#home') Home
+                    li: a(href='#projects') Projects
+                    li: a(href='#studio') Studio
+                    li: a(href='#news') News
+                    li: a(href='#contact') Contact
+                    li: label(for='toggler').close-menu.light-text
+              address
+                | 90802 California <br/>
+                | Long Beach <br/>
+                | PO Box 68789 <br/>
+                | 300 East Ocean <br/>
+                | Boulevard
             .triangle-line
             .triangle
               .triangle-content.light-text
                 a(href='tel:+6493456758') +64 9 345 6758
-                a(href='mailto:info@desgin-studio.com') info@desgin-studio.com
-            #address-block.light-text
-              nav#menu
-                i.fa.fa-bars
-                ul.list-inline
-                  li: a(href='#home') Home
-                  li: a(href='#projects') Projects
-                  li: a(href='#studio') Studio
-                  li: a(href='#news') News
-                  li: a(href='#contact') Contact
-              address
-                  | 90802 California <br/>
-                  | Long Beach <br/>
-                  | PO Box 68789 <br/>
-                  | 300 East Ocean Boulevard
+                a(href='mailto:info@desgin-studio.com') info@desgin-studio.com            
     section#projects
       .container-fluid
         .row.no-pad

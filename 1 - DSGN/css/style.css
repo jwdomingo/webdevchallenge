@@ -37,19 +37,23 @@ body {
   font-family: "Roboto Condensed", sans-serif;
   text-transform: uppercase;
   color: #333;
-  background-color: #e9eae2; }
+  background-color: #e9eae2;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility; }
+
+a:link, a:visited {
+  cursor: pointer;
+  text-decoration: none; }
 
 .light-text {
   color: white; }
   .light-text a:link, .light-text a:visited {
-    color: white;
-    text-decoration: none; }
+    color: white; }
 
 .dark-text {
   color: #333; }
   .dark-text a:link, .dark-text a:visited {
-    color: #333;
-    text-decoration: none; }
+    color: #333; }
 
 .triangle, .triangle-line {
   width: 100%;
@@ -92,7 +96,76 @@ body {
 .logo {
   width: 160px; }
 
-#address-block address {
-  margin-left: 60px; }
+#address-block {
+  position: relative;
+  z-index: 2; }
+  #address-block nav {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    bottom: 0;
+    left: 50px; }
+    #address-block nav label.toggle {
+      border: 3px white solid;
+      padding: 50.5px 50px;
+      margin: 0px;
+      background-image: url("../assets/header/menu.png");
+      background-repeat: no-repeat;
+      background-position: center; }
+      #address-block nav label.toggle:hover {
+        border: 3px #337ab7 solid;
+        background-image: url("../assets/header/menu-hover.png");
+        background-repeat: no-repeat;
+        background-position: center; }
+    #address-block nav #menu {
+      visibility: hidden;
+      position: absolute;
+      top: 0px;
+      right: 250px;
+      z-index: 2; }
+      #address-block nav #menu ul {
+        display: table; }
+        #address-block nav #menu ul li {
+          display: table-cell;
+          vertical-align: middle;
+          height: 107px;
+          font-size: 1.2em;
+          background-color: #ebb240;
+          margin: 0px;
+          padding: 0px;
+          text-align: center; }
+          #address-block nav #menu ul li a {
+            padding: 42.5px 50px; }
+            #address-block nav #menu ul li a:hover {
+              color: #333; }
+          #address-block nav #menu ul li label.close-menu {
+            display: table-cell;
+            vertical-align: middle;
+            padding: 52.5px 52.5px;
+            margin: 0px;
+            font-size: 2em;
+            font: sans-serif;
+            cursor: pointer;
+            background-image: url("../assets/header/close.png");
+            background-repeat: no-repeat;
+            background-position: center; }
+            #address-block nav #menu ul li label.close-menu:hover {
+              color: #333;
+              background-image: url("../assets/header/close-hover.png");
+              background-repeat: no-repeat;
+              background-position: center; }
+    #address-block nav input#toggler {
+      display: none; }
+      #address-block nav input#toggler:checked + #menu {
+        visibility: visible; }
+  #address-block address {
+    position: absolute;
+    top: 200px;
+    right: 0;
+    bottom: 0;
+    left: 0px;
+    margin-left: 50px;
+    margin-top: 0px;
+    line-height: 1em; }
 
 /*# sourceMappingURL=style.css.map */

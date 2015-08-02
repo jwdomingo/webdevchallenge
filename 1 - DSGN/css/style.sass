@@ -6,8 +6,9 @@ $secondary: #ebb240
 $tertiary: #ff9bd6
 $accent: #d43dbf
 $bkg-color: #e9eae2
-$txt-color: #333
-
+$dark-txt: #333
+$light-txt: white
+$hover-link: #337ab7
 
 // Remove Fluid Container Padding
 .container-fluid
@@ -39,19 +40,19 @@ $txt-color: #333
 
   [id="header-panel"]
     background-color: $primary
-    color: white
+    color: $light-txt
 
   [id="projects-panel"], .timeline-menu
     background-color: $secondary
-    color: white
+    color: $light-txt
 
   [id="studio-panel"]
     background-color: $tertiary
-    color: white
+    color: $light-txt
 
   [id="news-panel"]
     background-color: $accent
-    color: white
+    color: $light-txt
 
 // Typefaces
 @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300)
@@ -59,20 +60,24 @@ $txt-color: #333
 body
   font-family: 'Roboto Condensed', sans-serif
   text-transform: uppercase
-  color: $txt-color
+  color: $dark-txt
   background-color: $bkg-color
+  -webkit-font-smoothing: antialiased
+  text-rendering: optimizeLegibility
+
+a:link, a:visited
+  cursor: pointer
+  text-decoration: none
 
 .light-text
-  color: white
+  color: $light-txt
   a:link, a:visited
-    color: white
-    text-decoration: none
+    color: $light-txt
 
 .dark-text
-  color: $txt-color
+  color: $dark-txt
   a:link, a:visited
-    color: $txt-color
-    text-decoration: none
+    color: $dark-txt
 
 .triangle, .triangle-line
   width: 100%
@@ -98,7 +103,7 @@ body
     height: 0
     margin-top: -500px
     border-top: 500px solid transparent
-    border-right: 500px solid white
+    border-right: 500px solid $light-txt
 
 .triangle
   bottom: -1px
@@ -118,6 +123,81 @@ body
   width: 160px
 
 #address-block
+  position: relative
+  z-index: 2
+
   nav
+    +position(absolute, 50px 0 0 50px)
+
+    label.toggle
+      border: 3px $light-txt solid
+      padding: 50.5px 50px
+      margin: 0px
+      background:
+        image: url('../assets/header/menu.png')
+        repeat: no-repeat
+        position: center
+
+      &:hover
+        border: 3px $hover-link solid
+        background:
+          image: url('../assets/header/menu-hover.png')
+          repeat: no-repeat
+          position: center
+
+    #menu
+      visibility: hidden
+      position: absolute
+      top: 0px
+      right: 250px
+      z-index: 2
+
+      ul
+        display: table
+        li
+          display: table-cell
+          vertical-align: middle
+          height: 107px
+          font-size: 1.2em
+          background-color: $secondary
+          margin: 0px
+          padding: 0px
+          text-align: center
+
+          a
+            padding: 42.5px 50px
+
+            &:hover
+              color: $dark-txt
+
+          label.close-menu
+            display: table-cell
+            vertical-align: middle
+            padding: 52.5px 52.5px
+            margin: 0px
+            font-size: 2em
+            font: sans-serif
+            cursor: pointer
+            background:
+              image: url('../assets/header/close.png')
+              repeat: no-repeat
+              position: center
+
+            &:hover
+              color: $dark-txt
+              background:
+                image: url('../assets/header/close-hover.png')
+                repeat: no-repeat
+                position: center
+
+    input#toggler
+      display: none
+
+      &:checked + #menu
+        visibility: visible
+
   address
-    margin-left: 60px
+    +position(absolute, 200px 0 0 0px)
+    margin-left: 50px
+    margin-top: 0px
+    line-height: 1em
