@@ -27,6 +27,7 @@ $hover-link: #337ab7
   > [class*='col-']
     padding-right: 0
     padding-left: 0
+    +transition(3s)
 
 // Row-Height Columns
 .row
@@ -133,6 +134,8 @@ a:link, a:visited
       border: 3px $light-txt solid
       padding: 50.5px 50px
       margin: 0px
+      +transform(translateX(0px))
+      +transition
       background:
         image: url('../assets/header/menu.png')
         repeat: no-repeat
@@ -152,7 +155,7 @@ a:link, a:visited
       +transition
       position: absolute
       top: 0px
-      right: 250px
+      right: 75%
       z-index: 2
 
       ul
@@ -198,7 +201,11 @@ a:link, a:visited
     input#toggler
       display: none
 
-      &:checked + #menu
+      &:checked + label.toggle
+        +transform(translateX(-200px))
+        +transition
+
+      &:checked ~ #menu
         visibility: visible
         opacity: 1
         +transition

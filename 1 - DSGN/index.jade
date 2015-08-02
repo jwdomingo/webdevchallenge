@@ -19,7 +19,7 @@ html(lang="en")
     header
       .container-fluid
         .row.no-pad
-          .col-md-3
+          .col-xs-3
             .logo#home
               img(src='assets/header/logo.png', alt='DSGN Logo').img-responsive
               a(href='#') Associates <br/> Studio <br/> Design
@@ -30,11 +30,11 @@ html(lang="en")
               li: a(href'#'): i.fa.fa-google-plus
           .col-md-5
             img(src='assets/header/armchairs.png', alt='Brown Leather Armchairs').img-responsive
-          .col-md-4#header-panel
+          .col-md-4.col-xs-9#header-panel
             #address-block.light-text
-              nav
-                label(for='toggler').toggle.light-text
+              nav                
                 input(type='checkbox' id='toggler')
+                label(for='toggler').toggle.light-text
                 #menu
                   ul.list-inline
                     li: a(href='#home') Home
