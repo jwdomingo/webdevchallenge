@@ -1,5 +1,8 @@
 @import 'bourbon/bourbon'
 
+// Typefaces
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300)
+
 // Color Pallete
 $primary: #7bcbc1
 $secondary: #ebb240
@@ -27,7 +30,7 @@ $hover-link: #337ab7
   > [class*='col-']
     padding-right: 0
     padding-left: 0
-    +transition(3s)
+    +transition(2s)
 
 // Row-Height Columns
 .row
@@ -55,12 +58,10 @@ $hover-link: #337ab7
     background-color: $accent
     color: $light-txt
 
-// Typefaces
-@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300)
-
 body
   font-family: 'Roboto Condensed', sans-serif
   text-transform: uppercase
+  line-height: 1.2em
   color: $dark-txt
   background-color: $bkg-color
   -webkit-font-smoothing: antialiased
@@ -69,6 +70,12 @@ body
 a:link, a:visited
   cursor: pointer
   text-decoration: none
+
+a:hover
+  color: $hover-link !important
+  +transition
+
+// Typography Helpers
 
 .light-text
   color: $light-txt
@@ -80,6 +87,15 @@ a:link, a:visited
   a:link, a:visited
     color: $dark-txt
 
+ul.accent-text
+  font-size: 1.3em
+  cursor: pointer
+
+  a:link, a:visited
+    color: $primary
+
+// Triangle Panels
+
 .triangle, .triangle-line
   width: 100%
   height: 0
@@ -89,8 +105,8 @@ a:link, a:visited
 
 .triangle-content
   position: absolute
-  bottom: 0
-  right: 0
+  bottom: 25%
+  left: 40%
 
   a
     display: block
@@ -119,16 +135,28 @@ a:link, a:visited
     border-top: 500px solid transparent
     border-right: 500px solid $primary
 
-// Header
+////////////
+// HEADER //
+////////////
 .logo
-  width: 160px
+  margin: 50px 0 0 170px
+
+  img
+    width: 162px
+    margin-bottom: 4px
+
+  ul.social
+    text-align: center
+    margin-top: 40px
 
 #address-block
   position: relative
   z-index: 2
 
   nav
-    +position(absolute, 50px 0 0 50px)
+    position: absolute
+    top: 50px
+    left: 16%
 
     label.toggle
       border: 3px $light-txt solid
@@ -202,8 +230,9 @@ a:link, a:visited
       display: none
 
       &:checked + label.toggle
-        +transform(translateX(-200px))
-        +transition
+        +transform(translateX(-400px))
+        opacity: 0
+        +transition(2s)
 
       &:checked ~ #menu
         visibility: visible
@@ -211,7 +240,11 @@ a:link, a:visited
         +transition
 
   address
-    +position(absolute, 200px 0 0 0px)
-    margin-left: 50px
-    margin-top: 0px
-    line-height: 1em
+    position: absolute
+    top: 180px
+    left: 5%
+    margin: 0px
+    line-height: 1.1em
+
+.project-caption
+  +position(absolute, 0px 0 0 0px)
