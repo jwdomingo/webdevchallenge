@@ -26,11 +26,16 @@ $txt-color: #848484
     div
       margin: 0 auto
 
-h2, h3, h4, h5, h6
+p, h2
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif
   font-weight: 200
 
+p
+  color: $txt-color
 
+h3
+  font-family: 'Raleway', sans-serif
+  font-weight: 600
 header
   background-color: $bkg-color
 
@@ -47,6 +52,22 @@ header
 /////////////////////
 // BOOTSTRAP FIXES //
 /////////////////////
+
+.container-fluid
+  padding: 0px
+
+@media (max-width: 797px)
+  body
+    padding-left: 0px
+    padding-right: 0px
+
+.row.no-pad
+  margin-right: 0
+  margin-left: 0
+
+.row.no-pad > [class*='col-']
+  padding-right: 0
+  padding-left: 0
 
 //////////////////////
 // PARALLAX HELPERS //
@@ -107,6 +128,11 @@ section#feature
 section#call-to-action
   background-color: $secondary
 
+  .container
+    .row
+      h3
+        margin-top: 60px
+
 //////////////////
 // TESTIMONIALS //
 //////////////////
@@ -128,7 +154,7 @@ section#testimonials
 
 footer
   background-color: $primary
-  padding: 40px 0
+  padding: 100px 0 40px
   position: fixed
   z-index: -1
   bottom: 0

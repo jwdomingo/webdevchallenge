@@ -8,9 +8,16 @@
 .centered-div .container div {
   margin: 0 auto; }
 
-h2, h3, h4, h5, h6 {
+p, h2 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 200; }
+
+p {
+  color: #848484; }
+
+h3 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600; }
 
 header {
   background-color: #f4f4f4; }
@@ -22,6 +29,21 @@ header {
     padding-left: 20px; }
   header .title h2 {
     padding-top: 20px; }
+
+.container-fluid {
+  padding: 0px; }
+
+@media (max-width: 797px) {
+  body {
+    padding-left: 0px;
+    padding-right: 0px; } }
+.row.no-pad {
+  margin-right: 0;
+  margin-left: 0; }
+
+.row.no-pad > [class*='col-'] {
+  padding-right: 0;
+  padding-left: 0; }
 
 section {
   background-color: #f4f4f4; }
@@ -59,6 +81,8 @@ section#feature #product {
 
 section#call-to-action {
   background-color: #c5c5c5; }
+  section#call-to-action .container .row h3 {
+    margin-top: 60px; }
 
 section#testimonials .container-fluid .row [class*='col'] {
   height: 110px;
@@ -67,7 +91,7 @@ section#testimonials .container-fluid .row [class*='col'] {
 
 footer {
   background-color: #e3e3e3;
-  padding: 40px 0;
+  padding: 100px 0 40px;
   position: fixed;
   z-index: -1;
   bottom: 0;
