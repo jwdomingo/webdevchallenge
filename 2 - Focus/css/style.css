@@ -1,5 +1,51 @@
 @import url(http://fonts.googleapis.com/css?family=Pacifico);
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,600,300);
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,700);
+.centered-text {
+  text-align: center; }
+  .centered-text div {
+    display: inline-block; }
+
+.centered-div .container div {
+  margin: 0 auto; }
+
+h2, h3, h4, h5, h6 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 200; }
+
+header .title h1 {
+  display: inline;
+  font-family: "Pacifico", sans-serif;
+  font-size: 4.2em;
+  line-height: 1.2;
+  padding-left: 20px; }
+header .title h2 {
+  padding-top: 20px; }
+
+header {
+  position: relative;
+  height: 700px;
+  background-image: url("../assets/bg-lg.png");
+  background-size: contain;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+  header .title {
+    margin-top: 115px; }
+    header .title img.logo {
+      vertical-align: top; }
+    header .title img.arrow {
+      vertical-align: bottom;
+      margin-top: 40px; }
+
+section#feature #product {
+  height: 770px;
+  width: 360px;
+  position: absolute;
+  top: 370px;
+  left: 50%;
+  margin-left: -180px;
+  background-image: url("../assets/iphone.png");
+  background-position: bottom center;
+  background-repeat: no-repeat; }
 
 /*# sourceMappingURL=style.css.map */

@@ -3,10 +3,7 @@
 // Typefaces
 @import url(http://fonts.googleapis.com/css?family=Pacifico)
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,600,300)
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,700)
 
-
-//font-family: 'Roboto', sans-serif
 //font-family: 'Raleway', sans-serif
 
 // Color Pallete
@@ -15,3 +12,92 @@ $secondary: #c5c5c5
 $accent: #222
 $bkg-color: #f4f4f4
 $txt-color: #848484
+
+////////////////
+// TYPOGRAPHY //
+////////////////
+.centered-text
+  text-align: center
+  div
+    display: inline-block
+
+.centered-div
+  .container
+    div
+      margin: 0 auto
+
+h2, h3, h4, h5, h6
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif
+  font-weight: 200
+
+
+header
+  .title
+    h1
+      display: inline
+      font-family: 'Pacifico', sans-serif
+      font-size: 4.2em
+      line-height: 1.2
+      padding-left: 20px
+    h2
+      padding-top: 20px
+
+/////////////////////
+// BOOTSTRAP FIXES //
+/////////////////////
+
+////////////
+// HEADER //
+////////////
+
+header
+  position: relative
+  height: 700px
+  background:
+    image: url('../assets/bg-lg.png')
+    size: contain
+    position: top center
+    repeat: no-repeat
+    attachment: fixed
+
+  .title
+    margin-top: 115px
+
+    img.logo
+      vertical-align: top
+
+    img.arrow
+      vertical-align: bottom
+      margin-top: 40px
+
+/////////////
+// FEATURE //
+/////////////
+
+section#feature
+  #product
+    +size(360px 770px)
+    position: absolute
+    top: 370px
+    left: 50%
+    margin-left: -180px
+    background:
+      image: url('../assets/iphone.png')
+      position: bottom center
+      repeat: no-repeat
+
+////////////////////
+// CALL TO ACTION //
+////////////////////
+
+//////////////////
+// TESTIMONIALS //
+//////////////////
+
+////////////
+// SOCIAL //
+////////////
+
+////////////
+// FOOTER //
+////////////

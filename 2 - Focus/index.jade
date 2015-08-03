@@ -16,11 +16,15 @@ html(lang="en")
 
   body
     header.centered-text
-      span.logo
-      h1 Focus
-      h2 A landing page for your app with focus
+      .title
+        img(src='assets/logo.png' alt='Focus Logo').logo
+        h1 Focus
+        h2 A landing page for your app with focus
+        a(href='#product' alt='Product Section')
+          img(src='assets/arrow.png' alt='Down Arrow').arrow
       
     section#feature
+      #product
       .container
         .row
           .col-xs-12.col-sm-3.col-sm-offset-1
