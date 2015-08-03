@@ -32,6 +32,8 @@ h2, h3, h4, h5, h6
 
 
 header
+  background-color: $bkg-color
+
   .title
     h1
       display: inline
@@ -46,12 +48,23 @@ header
 // BOOTSTRAP FIXES //
 /////////////////////
 
+//////////////////////
+// PARALLAX HELPERS //
+//////////////////////
+
+section
+  background-color: $bkg-color
+
+  &#social
+    margin-bottom: 130px
+
 ////////////
 // HEADER //
 ////////////
 
 header
   position: relative
+  z-index: 2
   height: 700px
   background:
     image: url('../assets/bg-lg.png')
@@ -78,6 +91,7 @@ section#feature
   #product
     +size(360px 770px)
     position: absolute
+    z-index: 2
     top: 370px
     left: 50%
     margin-left: -180px
@@ -90,9 +104,19 @@ section#feature
 // CALL TO ACTION //
 ////////////////////
 
+section#call-to-action
+  background-color: $secondary
+
 //////////////////
 // TESTIMONIALS //
 //////////////////
+
+section#testimonials
+  .container-fluid
+    .row
+      [class*='col']
+        +size(110px)
+        border: 1px solid black
 
 ////////////
 // SOCIAL //
@@ -101,3 +125,19 @@ section#feature
 ////////////
 // FOOTER //
 ////////////
+
+footer
+  background-color: $primary
+  padding: 40px 0
+  position: fixed
+  z-index: -1
+  bottom: 0
+  width: 100%
+
+  nav
+    max-width: 500.766px
+    margin: 0 auto
+    text-align: center
+
+    ul li a
+      color: $txt-color
