@@ -102,14 +102,14 @@ header
 
     img.arrow
       vertical-align: bottom
-      margin-top: 40px
+      margin-top: 65px
 
 /////////////
 // FEATURE //
 /////////////
 
 section#feature
-  #product
+  .product
     +size(360px 770px)
     position: absolute
     z-index: 2
@@ -121,6 +121,13 @@ section#feature
       position: bottom center
       repeat: no-repeat
 
+  .feature1, .feature2
+    margin: 100px auto 50px
+  .feature3, .feature4
+    margin: 0px auto 150px
+
+svg
+  +size(100px)
 ////////////////////
 // CALL TO ACTION //
 ////////////////////

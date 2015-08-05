@@ -65,9 +65,9 @@ header {
       vertical-align: top; }
     header .title img.arrow {
       vertical-align: bottom;
-      margin-top: 40px; }
+      margin-top: 65px; }
 
-section#feature #product {
+section#feature .product {
   height: 770px;
   width: 360px;
   position: absolute;
@@ -78,6 +78,14 @@ section#feature #product {
   background-image: url("../assets/iphone.png");
   background-position: bottom center;
   background-repeat: no-repeat; }
+section#feature .feature1, section#feature .feature2 {
+  margin: 100px auto 50px; }
+section#feature .feature3, section#feature .feature4 {
+  margin: 0px auto 150px; }
+
+svg {
+  height: 100px;
+  width: 100px; }
 
 section#call-to-action {
   background-color: #c5c5c5; }
