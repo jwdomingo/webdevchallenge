@@ -91,7 +91,7 @@ section
 header
   position: relative
   z-index: 2
-  height: 700px
+  height: 650px
   background:
     image: url('../assets/bg-lg.png')
     size: cover
@@ -113,26 +113,37 @@ header
 // FEATURE //
 /////////////
 
-section#feature
-  .product
-    +size(360px 770px)
+section
+  svg#feature
+    +size(360px 740px)
     position: absolute
     z-index: 2
     top: 370px
     left: 50%
     margin-left: -180px
-    background:
-      image: url('../assets/iphone.png')
-      position: bottom center
-      repeat: no-repeat
+
+    image
+      x: 0
+      y: 0
+      +size(360px 740px)
+
+  // .product
+  //   +size(360px 770px)
+  //   position: absolute
+  //   z-index: 2
+  //   top: 370px
+  //   left: 50%
+  //   margin-left: -180px
+  //   background:
+  //     image: url('../assets/iphone.png')
+  //     position: bottom center
+  //     repeat: no-repeat
 
   .feature1, .feature2
     margin: 100px auto 50px
   .feature3, .feature4
     margin: 0px auto 150px
 
-svg
-  +size(100px)
 ////////////////////
 // CALL TO ACTION //
 ////////////////////
