@@ -36,6 +36,11 @@ p
 h3
   font-family: 'Raleway', sans-serif
   font-weight: 600
+
+.quote h3
+  font-weight: 400
+  color: $accent
+
 header
   background-color: $bkg-color
 
@@ -89,7 +94,7 @@ header
   height: 700px
   background:
     image: url('../assets/bg-lg.png')
-    size: contain
+    size: cover
     position: top center
     repeat: no-repeat
     attachment: fixed
@@ -144,23 +149,63 @@ section#call-to-action
 // TESTIMONIALS //
 //////////////////
 
-section#testimonials
-  .container-fluid
-    .row
-      [class*='col']
-        +size(110px)
-        border: 1px solid black
+section
+  #testimonials
+    padding: 230px 0 0 0
+    margin: 0
+    width: 100vw
+    height: 400px
+    overflow: hidden
+
+    a
+      float: left
+      color: $txt-color
+
+      img.thumb
+        +filter(grayscale(1))
+
+        &:hover
+          +filter(grayscale(0))
+          +transition
+          cursor: pointer
+
+      .quote
+        position: absolute
+        top: 1448px
+        left: 0
+        opacity: 0
+        width: 100%
+        text-align: center
+        padding: 0px
+        margin: 0px
+
+        h3
+          margin: 40px 0 40px
+
+        p
+          margin: 0
+
+      &:hover
+        text-decoration: none
+        pointer: none
+        color: $txt-color
+
+        .quote
+          opacity: 1
+          +transition(opacity 1s ease-in-out)
 
 ////////////
 // SOCIAL //
 ////////////
+section#social
+  float: clear
 
 ////////////
 // FOOTER //
 ////////////
 
 footer
-  background-color: $primary
+  background-color: $accent
   padding: 100px 0 40px
   position: fixed
   z-index: -1
@@ -173,4 +218,4 @@ footer
     text-align: center
 
     ul li a
-      color: $txt-color
+      color: $primary

@@ -19,6 +19,10 @@ h3 {
   font-family: "Raleway", sans-serif;
   font-weight: 600; }
 
+.quote h3 {
+  font-weight: 400;
+  color: #222; }
+
 header {
   background-color: #f4f4f4; }
   header .title h1 {
@@ -55,7 +59,7 @@ header {
   z-index: 2;
   height: 700px;
   background-image: url("../assets/bg-lg.png");
-  background-size: contain;
+  background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
   background-attachment: fixed; }
@@ -92,13 +96,53 @@ section#call-to-action {
   section#call-to-action .container .row h3 {
     margin-top: 60px; }
 
-section#testimonials .container-fluid .row [class*='col'] {
-  height: 110px;
-  width: 110px;
-  border: 1px solid black; }
+section #testimonials {
+  padding: 230px 0 0 0;
+  margin: 0;
+  width: 100vw;
+  height: 400px;
+  overflow: hidden; }
+  section #testimonials a {
+    float: left;
+    color: #848484; }
+    section #testimonials a img.thumb {
+      -webkit-filter: grayscale(1);
+      filter: grayscale(1); }
+      section #testimonials a img.thumb:hover {
+        -webkit-filter: grayscale(0);
+        filter: grayscale(0);
+        -webkit-transition: all 0.15s ease-out 0s;
+        -moz-transition: all 0.15s ease-out 0s;
+        transition: all 0.15s ease-out 0s;
+        cursor: pointer; }
+    section #testimonials a .quote {
+      position: absolute;
+      top: 1448px;
+      left: 0;
+      opacity: 0;
+      width: 100%;
+      text-align: center;
+      padding: 0px;
+      margin: 0px; }
+      section #testimonials a .quote h3 {
+        margin: 40px 0 40px; }
+      section #testimonials a .quote p {
+        margin: 0; }
+    section #testimonials a:hover {
+      text-decoration: none;
+      pointer: none;
+      color: #848484; }
+      section #testimonials a:hover .quote {
+        opacity: 1;
+        -webkit-transition: opacity 1s ease-in-out;
+        -moz-transition: opacity 1s ease-in-out;
+        transition: opacity 1s ease-in-out; }
+
+section#social {
+  float: clear; }
 
 footer {
-  background-color: #e3e3e3;
+  background-color: #222;
   padding: 100px 0 40px;
   position: fixed;
   z-index: -1;
@@ -109,6 +153,6 @@ footer {
     margin: 0 auto;
     text-align: center; }
     footer nav ul li a {
-      color: #848484; }
+      color: #e3e3e3; }
 
 /*# sourceMappingURL=style.css.map */
