@@ -161,24 +161,173 @@ section#call-to-action
 //////////////////
 
 section
+  overflow-x: scroll
+
   #testimonials
     padding: 230px 0 0 0
     margin: 0
-    width: 100vw
+    width: 1600px
     height: 400px
-    overflow: hidden
 
     a
       float: left
       color: $txt-color
 
-      img.thumb
+      [class*='thumb']
         +filter(grayscale(1))
+        +size(88.81px)
+        cursor: pointer
+        background:
+          image: url('../assets/avatars.png')
 
         &:hover
           +filter(grayscale(0))
           +transition
-          cursor: pointer
+
+      .thumb01
+        background-position: 0 0
+      .thumb02
+        background-position: -88.81px 0
+      .thumb03
+        background-position: -177.62px 0
+      .thumb04
+        background-position: -266.43px 0
+      .thumb05
+        background-position: -355.24px 0
+      .thumb06
+        background-position: -444.05px 0
+      .thumb07
+        background-position: -532.86px 0
+      .thumb08
+        background-position: -621.67px 0
+      .thumb09
+        background-position: -710.48px 0
+      .thumb10
+        background-position: -799.29px 0
+      .thumb11
+        background-position: -888.1px 0
+      .thumb12
+        background-position: -976.91px 0
+      .thumb13
+        background-position: -1065.72px 0
+      .thumb14
+        background-position: -1154.53px 0
+      .thumb15
+        background-position: -1243.34px 0
+      .thumb16
+        background-position: -1332.15px 0
+      .thumb17
+        background-position: -1420.96px 0
+      .thumb18
+        background-position: -1509.77px 0
+      .thumb19
+        background-position: 0 -88.81px
+      .thumb20
+        background-position: -88.81px -88.81px
+      .thumb21
+        background-position: -177.62px -88.81px
+      .thumb22
+        background-position: -266.43px -88.81px
+      .thumb23
+        background-position: -355.24px -88.81px
+      .thumb24
+        background-position: -444.05px -88.81px
+      .thumb25
+        background-position: -532.86px -88.81px
+      .thumb26
+        background-position: -621.67px -88.81px
+      .thumb27
+        background-position: -710.48px -88.81px
+      .thumb28
+        background-position: -799.29px -88.81px
+      .thumb29
+        background-position: -888.1px -88.81px
+      .thumb30
+        background-position: -976.91px -88.81px
+      .thumb31
+        background-position: -1065.72px -88.81px
+      .thumb32
+        background-position: -1154.53px -88.81px
+      .thumb33
+        background-position: -1243.34px -88.81px
+      .thumb34
+        background-position: -1332.15px -88.81px
+      .thumb35
+        background-position: -1420.96px -88.81px
+      .thumb36
+        background-position: -1509.77px -88.81px
+      .thumb37
+        background-position: 0 -177.62px
+      .thumb38
+        background-position: -88.81px -177.62px
+      .thumb39
+        background-position: -177.62px -177.62px
+      .thumb40
+        background-position: -266.43px -177.62px
+      .thumb41
+        background-position: -355.24px -177.62px
+      .thumb42
+        background-position: -444.05px -177.62px
+      .thumb43
+        background-position: -532.86px -177.62px
+      .thumb44
+        background-position: -621.67px -177.62px
+      .thumb45
+        background-position: -710.48px -177.62px
+      .thumb46
+        background-position: -799.29px -177.62px
+      .thumb47
+        background-position: -888.1px -177.62px
+      .thumb48
+        background-position: -976.91px -177.62px
+      .thumb49
+        background-position: -1065.72px -177.62px
+      .thumb50
+        background-position: -1154.53px -177.62px
+      .thumb51
+        background-position: -1243.34px -177.62px
+      .thumb52
+        background-position: -1332.15px -177.62px
+      .thumb53
+        background-position: -1420.96px -177.62px
+      .thumb54
+        background-position: -1509.77px -177.62px
+      .thumb55
+        background-position: 0 -266.43px
+      .thumb56
+        background-position: -88.81px -266.43px
+      .thumb57
+        background-position: -177.62px -266.43px
+      .thumb58
+        background-position: -266.43px -266.43px
+      .thumb59
+        background-position: -355.24px -266.43px
+      .thumb60
+        background-position: -444.05px -266.43px
+      .thumb61
+        background-position: -532.86px -266.43px
+      .thumb62
+        background-position: -621.67px -266.43px
+      .thumb63
+        background-position: -710.48px -266.43px
+      .thumb64
+        background-position: -799.29px -266.43px
+      .thumb65
+        background-position: -888.1px -266.43px
+      .thumb66
+        background-position: -976.91px -266.43px
+      .thumb67
+        background-position: -1065.72px -266.43px
+      .thumb68
+        background-position: -1154.53px -266.43px
+      .thumb69
+        background-position: -1243.34px -266.43px
+      .thumb70
+        background-position: -1332.15px -266.43px
+      .thumb71
+        background-position: -1420.96px -266.43px
+      .thumb72
+        background-position: -1509.77px -266.43px
 
       .quote
         position: absolute
@@ -203,7 +352,7 @@ section
 
         .quote
           opacity: 1
-          +transition(opacity 1s ease-in-out)
+          +transition(opacity .6s ease-in-out)
 
 ////////////
 // SOCIAL //
