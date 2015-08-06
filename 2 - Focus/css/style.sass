@@ -179,12 +179,39 @@ section
 ////////////////////
 
 section#call-to-action
-  background-color: $secondary
+  background-color: $primary
 
   .container
     .row
       h3
+        margin: 60px 0 20px
+      p
+        margin: 0 0 30px
+      ul
+        font-size: 2.75em
+        color: $bkg-color
+        margin-bottom: 99px
+
+        li
+          i
+            background-color: $secondary
+            border-radius: 50%
+            margin: 0 10px 0 0 !important
+
+            &.fa-apple
+              padding: 13px 17.375px
+            &.fa-android
+              padding: 13px 17.375px
+            &.fa-windows
+              padding: 13px 14.375px
+
+            &:hover
+              background-color: $accent
+              +transition
+
+      iframe
         margin-top: 60px
+        border-radius: 10px
 
 //////////////////
 // TESTIMONIALS //
@@ -194,7 +221,7 @@ section
   overflow-x: scroll
 
   #testimonials
-    padding: 230px 0 0 0
+    padding: 150px 0 0 0
     margin: 0
     width: 1600px
     height: 400px
@@ -361,16 +388,17 @@ section
 
       .quote
         position: absolute
-        top: 1448px
+        top: 1522px
         left: 0
-        opacity: 0
         width: 100%
-        text-align: center
         padding: 0px
         margin: 0px
+        text-align: center
+        background-color: $bkg-color
+        opacity: 0
 
         h3
-          margin: 40px 0 40px
+          margin: 40px 0 30px
 
         p
           margin: 0
