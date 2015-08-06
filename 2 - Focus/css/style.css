@@ -84,6 +84,31 @@ section svg#feature {
     y: 0;
     height: 740px;
     width: 360px; }
+  section svg#feature circle.pt-in {
+    r: 7px;
+    fill: #f6f6f6; }
+  section svg#feature circle.pt-out {
+    r: 10px;
+    fill: black;
+    fill-opacity: 0.25; }
+  section svg#feature circle.pt1 {
+    cx: 100px;
+    cy: 295px; }
+  section svg#feature circle.pt2 {
+    cx: 250px;
+    cy: 195px; }
+  section svg#feature circle.pt3 {
+    cx: 135px;
+    cy: 525px; }
+  section svg#feature circle.pt4 {
+    cx: 235px;
+    cy: 425px; }
+    section svg#feature circle.pt4.pt-in {
+      r: 6px;
+      fill: black; }
+    section svg#feature circle.pt4.pt-out {
+      r: 12px;
+      fill: white; }
 section .feature1, section .feature2 {
   margin: 100px auto 50px; }
 section .feature3, section .feature4 {
