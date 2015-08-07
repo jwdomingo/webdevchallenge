@@ -128,14 +128,23 @@ section
       +size(360px 740px)
 
     circle
+      +transition
       &.pt-in
         r: 7px
         fill: #f6f6f6
+        &:hover
+          r: 6px
+          fill: $accent
 
       &.pt-out
         r: 10px
-        fill: black
+        fill: white
         fill-opacity: 0.25
+        &:hover
+          r: 20px
+          fill: white
+        &:hover + circle
+          fill: $accent
 
       &.pt1
         cx: 100px
@@ -149,13 +158,6 @@ section
       &.pt4
         cx: 235px
         cy: 425px
-        &.pt-in
-          r: 6px
-          fill: black
-        &.pt-out
-          r: 12px
-          fill: white
-
 
   // .product
   //   +size(360px 770px)
@@ -213,7 +215,6 @@ section#call-to-action
         height: 240px
         margin-top: 60px
         border-radius: 10px
-        overflow: hidden
 
 //////////////////
 // TESTIMONIALS //
