@@ -98,6 +98,25 @@ section svg#feature {
     y: 0;
     height: 740px;
     width: 360px; }
+  @media screen and (max-width: 1199px) {
+    section svg#feature {
+      height: 760.55556px;
+      width: 280px;
+      margin-left: -160px;
+      -webkit-transition: 1s;
+      -moz-transition: 1s;
+      transition: 1s; } }
+  @media screen and (max-width: 991px) {
+    section svg#feature {
+      height: 760.55556px;
+      width: 280px;
+      margin-left: -160px;
+      -webkit-transition: 1s;
+      -moz-transition: 1s;
+      transition: 1s; }
+      section svg#feature image {
+        height: 760.55556px;
+        width: 280px; } }
   section svg#feature a {
     cursor: pointer; }
     section svg#feature a:hover line {
@@ -153,7 +172,7 @@ section#call-to-action {
   section#call-to-action .container .row p {
     margin: 0 0 30px; }
   section#call-to-action .container .row ul.list-inline {
-    margin: 0 0 99px;
+    margin: 0 0 90px;
     font-size: 2.75em; }
     section#call-to-action .container .row ul.list-inline li {
       padding: 0 10px; }
@@ -345,6 +364,9 @@ section {
         text-align: center;
         background-color: #f4f4f4;
         opacity: 0; }
+        @media screen and (max-width: 1200px) {
+          section #testimonials a .quote {
+            top: 1582px; } }
         section #testimonials a .quote h3 {
           margin: 40px 0 30px; }
         section #testimonials a .quote p {

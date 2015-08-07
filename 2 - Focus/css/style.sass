@@ -146,6 +146,19 @@ section
       y: 0
       +size(360px 740px)
 
+    @media screen and (max-width: 1199px)
+      +size(280px 760.555556px)
+      margin-left: -160px
+      +transition(1s)
+
+    @media screen and (max-width: 991px)
+      +size(280px 760.555556px)
+      margin-left: -160px
+      +transition(1s)
+
+      image
+        +size(280px 760.555556px)
+
     a
       cursor: pointer
 
@@ -217,7 +230,7 @@ section#call-to-action
         margin: 0 0 30px
 
       ul.list-inline
-        margin: 0 0 99px
+        margin: 0 0 90px
         font-size: 2.75em
 
         li
@@ -417,6 +430,9 @@ section
         text-align: center
         background-color: $bkg-color
         opacity: 0
+
+        @media screen and (max-width: 1200px)
+          top: 1582px
 
         h3
           margin: 40px 0 30px
