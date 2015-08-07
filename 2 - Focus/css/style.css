@@ -140,8 +140,10 @@ section#call-to-action {
         -moz-transition: all 0.15s ease-out 0s;
         transition: all 0.15s ease-out 0s; }
   section#call-to-action .container .row iframe {
+    height: 240px;
     margin-top: 60px;
-    border-radius: 10px; }
+    border-radius: 10px;
+    overflow: hidden; }
 
 section {
   overflow-x: scroll; }
