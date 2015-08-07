@@ -61,7 +61,7 @@ header
 .container-fluid
   padding: 0px
 
-@media (max-width: 797px)
+@media screen and (max-width: 797px)
   body
     padding-left: 0px
     padding-right: 0px
@@ -73,6 +73,10 @@ header
 .row.no-pad > [class*='col-']
   padding-right: 0
   padding-left: 0
+
+@media screen and (max-width: 768px)
+  .col-xs-offset-right-6
+    margin-right: 50%
 
 //////////////////////
 // PARALLAX HELPERS //
@@ -148,16 +152,22 @@ section
 
     @media screen and (max-width: 1199px)
       +size(280px 760.555556px)
-      margin-left: -160px
-      +transition(1s)
-
-    @media screen and (max-width: 991px)
-      +size(280px 760.555556px)
-      margin-left: -160px
+      margin-left: -140px
       +transition(1s)
 
       image
         +size(280px 760.555556px)
+
+    @media screen and (max-width: 991px)
+      +size(225px 462.5px)
+      margin-left: -112.5px
+      +transition(1s)
+
+      image
+        +size(225px 462.5px)
+
+    @media screen and (max-width: 768px)
+      margin-left: 60px
 
     a
       cursor: pointer
