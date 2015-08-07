@@ -84,6 +84,24 @@ section
   &#social
     margin-bottom: 130px
 
+///////////////////
+// GLOBAL STYLES //
+///////////////////
+
+ul.list-inline
+  color: $bkg-color
+
+  li
+    .frame
+      background-color: $secondary
+      border-radius: 50%
+      cursor: pointer
+      text-align: center
+
+      &:hover
+        background-color: $accent
+        +transition
+
 ////////////
 // HEADER //
 ////////////
@@ -194,29 +212,22 @@ section#call-to-action
     .row
       h3
         margin: 60px 0 20px
+
       p
         margin: 0 0 30px
-      ul
+
+      ul.list-inline
+        margin: 0 0 99px
         font-size: 2.75em
-        color: $bkg-color
-        margin-bottom: 99px
 
         li
-          i
-            background-color: $secondary
-            border-radius: 50%
-            margin: 0 10px 0 0 !important
+          padding: 0 10px
+          &:first-child
+            padding-left: 0
 
-            &.fa-apple
-              padding: 13px 17.375px
-            &.fa-android
-              padding: 13px 17.375px
-            &.fa-windows
-              padding: 13px 14.375px
-
-            &:hover
-              background-color: $accent
-              +transition
+          .frame
+            +size(75px)
+            line-height: 75px
 
       iframe
         height: 240px
@@ -428,24 +439,18 @@ section
 section#social
   h3
     margin: 60px 0 25px
+
   p
     margin: 0 0 25px
-  ul
+
+  ul.list-inline
     margin: 0 0 60px
     font-size: 1.5em
-    color: $bkg-color
 
     li
       .frame
         +size(40px)
-        background-color: $secondary
-        border-radius: 50%
-        cursor: pointer
         line-height: 40px
-
-        &:hover
-          background-color: $accent
-          +transition
 
 ////////////
 // FOOTER //

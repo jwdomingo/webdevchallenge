@@ -54,6 +54,19 @@ section {
   section#social {
     margin-bottom: 130px; }
 
+ul.list-inline {
+  color: #f4f4f4; }
+  ul.list-inline li .frame {
+    background-color: #c5c5c5;
+    border-radius: 50%;
+    cursor: pointer;
+    text-align: center; }
+    ul.list-inline li .frame:hover {
+      background-color: #222;
+      -webkit-transition: all 0.15s ease-out 0s;
+      -moz-transition: all 0.15s ease-out 0s;
+      transition: all 0.15s ease-out 0s; }
+
 header {
   position: relative;
   z-index: 2;
@@ -139,25 +152,17 @@ section#call-to-action {
     margin: 60px 0 20px; }
   section#call-to-action .container .row p {
     margin: 0 0 30px; }
-  section#call-to-action .container .row ul {
-    font-size: 2.75em;
-    color: #f4f4f4;
-    margin-bottom: 99px; }
-    section#call-to-action .container .row ul li i {
-      background-color: #c5c5c5;
-      border-radius: 50%;
-      margin: 0 10px 0 0 !important; }
-      section#call-to-action .container .row ul li i.fa-apple {
-        padding: 13px 17.375px; }
-      section#call-to-action .container .row ul li i.fa-android {
-        padding: 13px 17.375px; }
-      section#call-to-action .container .row ul li i.fa-windows {
-        padding: 13px 14.375px; }
-      section#call-to-action .container .row ul li i:hover {
-        background-color: #222;
-        -webkit-transition: all 0.15s ease-out 0s;
-        -moz-transition: all 0.15s ease-out 0s;
-        transition: all 0.15s ease-out 0s; }
+  section#call-to-action .container .row ul.list-inline {
+    margin: 0 0 99px;
+    font-size: 2.75em; }
+    section#call-to-action .container .row ul.list-inline li {
+      padding: 0 10px; }
+      section#call-to-action .container .row ul.list-inline li:first-child {
+        padding-left: 0; }
+      section#call-to-action .container .row ul.list-inline li .frame {
+        height: 75px;
+        width: 75px;
+        line-height: 75px; }
   section#call-to-action .container .row iframe {
     height: 240px;
     margin-top: 60px;
@@ -358,22 +363,13 @@ section#social h3 {
   margin: 60px 0 25px; }
 section#social p {
   margin: 0 0 25px; }
-section#social ul {
+section#social ul.list-inline {
   margin: 0 0 60px;
-  font-size: 1.5em;
-  color: #f4f4f4; }
-  section#social ul li .frame {
+  font-size: 1.5em; }
+  section#social ul.list-inline li .frame {
     height: 40px;
     width: 40px;
-    background-color: #c5c5c5;
-    border-radius: 50%;
-    cursor: pointer;
     line-height: 40px; }
-    section#social ul li .frame:hover {
-      background-color: #222;
-      -webkit-transition: all 0.15s ease-out 0s;
-      -moz-transition: all 0.15s ease-out 0s;
-      transition: all 0.15s ease-out 0s; }
 
 footer {
   background-color: #222;
