@@ -109,7 +109,7 @@ ul.list-inline
       cursor: pointer
       text-align: center
 
-      &:active, &:hover
+      &:active, &:hover, &:focus
         background-color: $accent
         +transition
 
@@ -190,7 +190,7 @@ section
     a
       cursor: pointer
 
-      &:active, &:hover
+      &:active, &:hover, &:focus
         line
           opacity: 1
 
@@ -299,7 +299,7 @@ section
         background:
           image: url('../assets/avatars.png')
 
-        &:active, &:hover
+        &:active, &:hover, &:focus
           +filter(grayscale(0))
           +transition
 
@@ -468,7 +468,7 @@ section
         p
           margin: 0
 
-      &:active, &:hover
+      &:active, &:hover, &:focus
         text-decoration: none
         pointer: none
         color: $txt-color

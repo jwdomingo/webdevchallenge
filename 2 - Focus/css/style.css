@@ -71,7 +71,7 @@ ul.list-inline {
     border-radius: 50%;
     cursor: pointer;
     text-align: center; }
-    ul.list-inline li .frame:active, ul.list-inline li .frame:hover {
+    ul.list-inline li .frame:active, ul.list-inline li .frame:hover, ul.list-inline li .frame:focus {
       background-color: #222;
       -webkit-transition: all 0.15s ease-out 0s;
       -moz-transition: all 0.15s ease-out 0s;
@@ -146,15 +146,15 @@ section svg#feature {
       margin-left: 60px; } }
   section svg#feature a {
     cursor: pointer; }
-    section svg#feature a:active line, section svg#feature a:hover line {
+    section svg#feature a:active line, section svg#feature a:hover line, section svg#feature a:focus line {
       opacity: 1; }
-    section svg#feature a:active circle.pt-out:hover, section svg#feature a:hover circle.pt-out:hover {
+    section svg#feature a:active circle.pt-out:hover, section svg#feature a:hover circle.pt-out:hover, section svg#feature a:focus circle.pt-out:hover {
       r: 20px;
       fill: white; }
-    section svg#feature a:active circle.pt-out:hover + .pt-in, section svg#feature a:hover circle.pt-out:hover + .pt-in {
+    section svg#feature a:active circle.pt-out:hover + .pt-in, section svg#feature a:hover circle.pt-out:hover + .pt-in, section svg#feature a:focus circle.pt-out:hover + .pt-in {
       r: 6px;
       fill: #222; }
-    section svg#feature a:active circle.pt-in:hover, section svg#feature a:hover circle.pt-in:hover {
+    section svg#feature a:active circle.pt-in:hover, section svg#feature a:hover circle.pt-in:hover, section svg#feature a:focus circle.pt-in:hover {
       r: 6px;
       fill: #222; }
     section svg#feature a line {
@@ -231,7 +231,7 @@ section {
         width: 88.81px;
         cursor: pointer;
         background-image: url("../assets/avatars.png"); }
-        section #testimonials a [class*='thumb']:active, section #testimonials a [class*='thumb']:hover {
+        section #testimonials a [class*='thumb']:active, section #testimonials a [class*='thumb']:hover, section #testimonials a [class*='thumb']:focus {
           -webkit-filter: grayscale(0);
           filter: grayscale(0);
           -webkit-transition: all 0.15s ease-out 0s;
@@ -398,11 +398,11 @@ section {
           margin: 40px 0 30px; }
         section #testimonials a .quote p {
           margin: 0; }
-      section #testimonials a:active, section #testimonials a:hover {
+      section #testimonials a:active, section #testimonials a:hover, section #testimonials a:focus {
         text-decoration: none;
         pointer: none;
         color: #848484; }
-        section #testimonials a:active .quote, section #testimonials a:hover .quote {
+        section #testimonials a:active .quote, section #testimonials a:hover .quote, section #testimonials a:focus .quote {
           opacity: 1;
           -webkit-transition: opacity 0.6s ease-in-out;
           -moz-transition: opacity 0.6s ease-in-out;
