@@ -78,43 +78,56 @@ section svg#feature {
   z-index: 2;
   top: 370px;
   left: 50%;
-  margin-left: -180px; }
+  margin-left: -180px;
+  overflow: visible; }
   section svg#feature image {
     x: 0;
     y: 0;
     height: 740px;
     width: 360px; }
-  section svg#feature circle {
-    -webkit-transition: all 0.15s ease-out 0s;
-    -moz-transition: all 0.15s ease-out 0s;
-    transition: all 0.15s ease-out 0s; }
-    section svg#feature circle.pt-in {
-      r: 7px;
-      fill: #f6f6f6; }
-      section svg#feature circle.pt-in:hover {
-        r: 6px;
-        fill: #222; }
-    section svg#feature circle.pt-out {
-      r: 10px;
-      fill: white;
-      fill-opacity: 0.25; }
-      section svg#feature circle.pt-out:hover {
-        r: 20px;
-        fill: white; }
-      section svg#feature circle.pt-out:hover + circle {
-        fill: #222; }
-    section svg#feature circle.pt1 {
-      cx: 100px;
-      cy: 295px; }
-    section svg#feature circle.pt2 {
-      cx: 250px;
-      cy: 195px; }
-    section svg#feature circle.pt3 {
-      cx: 135px;
-      cy: 525px; }
-    section svg#feature circle.pt4 {
-      cx: 235px;
-      cy: 425px; }
+  section svg#feature a {
+    cursor: pointer; }
+    section svg#feature a:hover line {
+      opacity: 1; }
+    section svg#feature a:hover circle.pt-out:hover {
+      r: 20px;
+      fill: white; }
+    section svg#feature a:hover circle.pt-out:hover + .pt-in {
+      r: 6px;
+      fill: #222; }
+    section svg#feature a:hover circle.pt-in:hover {
+      r: 6px;
+      fill: #222; }
+    section svg#feature a line {
+      stroke: black;
+      stroke-width: 1;
+      opacity: 0;
+      -webkit-transition: 0.3s;
+      -moz-transition: 0.3s;
+      transition: 0.3s; }
+    section svg#feature a circle {
+      -webkit-transition: all 0.15s ease-out 0s;
+      -moz-transition: all 0.15s ease-out 0s;
+      transition: all 0.15s ease-out 0s; }
+      section svg#feature a circle.pt-in {
+        r: 7px;
+        fill: #f6f6f6; }
+      section svg#feature a circle.pt-out {
+        r: 10px;
+        fill: white;
+        fill-opacity: 0.25; }
+      section svg#feature a circle.pt1 {
+        cx: 100px;
+        cy: 295px; }
+      section svg#feature a circle.pt2 {
+        cx: 250px;
+        cy: 195px; }
+      section svg#feature a circle.pt3 {
+        cx: 135px;
+        cy: 525px; }
+      section svg#feature a circle.pt4 {
+        cx: 235px;
+        cy: 425px; }
 section .feature1, section .feature2 {
   margin: 100px auto 50px; }
 section .feature3, section .feature4 {
@@ -341,8 +354,25 @@ section {
           -moz-transition: opacity 0.6s ease-in-out;
           transition: opacity 0.6s ease-in-out; }
 
-section#social {
-  float: clear; }
+section#social h3 {
+  margin: 60px 0 25px; }
+section#social p {
+  margin: 0 0 25px; }
+section#social ul {
+  margin: 0 0 60px;
+  font-size: 1.25em;
+  color: #f4f4f4; }
+  section#social ul li .frame {
+    height: 30px;
+    width: 30px;
+    background-color: #c5c5c5;
+    border-radius: 50%;
+    margin: 0 5px 0 0; }
+    section#social ul li .frame i:hover {
+      background-color: #222;
+      -webkit-transition: all 0.15s ease-out 0s;
+      -moz-transition: all 0.15s ease-out 0s;
+      transition: all 0.15s ease-out 0s; }
 
 footer {
   background-color: #222;

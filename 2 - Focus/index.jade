@@ -26,21 +26,23 @@ html(lang="en")
     section
       svg(version='1.1')#feature
         image(xlink:href='assets/iphone.png')
-        line
-        circle.pt1.pt-out
-        circle.pt1.pt-in
         
-        line
-        circle.pt2.pt-out
-        circle.pt2.pt-in
-        
-        line
-        circle.pt3.pt-out
-        circle.pt3.pt-in
-        
-        line
-        circle.pt4.pt-out
-        circle.pt4.pt-in
+        a
+          line(x1='100' y1='295' x2='-125' y2='390')
+          circle.pt1.pt-out
+          circle.pt1.pt-in
+        a
+          line(x1='250' y1='195' x2='375' y2='360')
+          circle.pt2.pt-out
+          circle.pt2.pt-in
+        a
+          line(x1='135' y1='525' x2='-185' y2='557')
+          circle.pt3.pt-out
+          circle.pt3.pt-in
+        a
+          line(x1='235' y1='425' x2='370' y2='540')
+          circle.pt4.pt-out
+          circle.pt4.pt-in
 
       .container.space-above
         .row
@@ -444,12 +446,12 @@ html(lang="en")
         h3 Say Hi &amp; Get in Touch
         p Cupcake ipsum dolor sit amet chocolate bar danish.
         ul.list-inline
-          li: i.fa.fa-twitter
-          li: i.fa.fa-facebook
-          li: i.fa.fa-pinterest
-          li: i.fa.fa-google-plus
-          li: i.fa.fa-linkedin
-          li: i.fa.fa-youtube
+          li: .frame: i.fa.fa-twitter
+          li: .frame: i.fa.fa-facebook
+          li: .frame: i.fa.fa-pinterest
+          li: .frame: i.fa.fa-google-plus
+          li: .frame: i.fa.fa-linkedin
+          li: .frame: i.fa.fa-youtube
           
     footer
       nav(role='navigation')
