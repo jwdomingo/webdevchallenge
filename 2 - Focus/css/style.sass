@@ -61,7 +61,7 @@ header
 .container-fluid
   padding: 0px
 
-@media screen and (max-width: 797px)
+@media screen and (max-width: 768px)
   body
     padding-left: 0px
     padding-right: 0px
@@ -74,10 +74,6 @@ header
   padding-right: 0
   padding-left: 0
 
-@media screen and (max-width: 768px)
-  .col-xs-offset-right-6
-    margin-right: 50%
-
 //////////////////////
 // PARALLAX HELPERS //
 //////////////////////
@@ -89,7 +85,7 @@ section
     margin-bottom: 130px
 
     @media screen and (max-width: 768px)
-      margin-bottom: 330px
+      margin-bottom: 0
 
 ///////////////////
 // GLOBAL STYLES //
@@ -148,6 +144,9 @@ header
       vertical-align: bottom
       margin-top: 65px
 
+      @media screen and (max-width: 768px)
+        display: none
+
 /////////////
 // FEATURE //
 /////////////
@@ -184,7 +183,19 @@ section
         +size(225px 462.5px)
 
     @media screen and (max-width: 768px)
-      margin-left: 60px
+      margin-left: 0
+      left: auto
+      right: 5%
+
+    @media screen and (max-width: 575px)
+      +size(175px 359.722222px)
+      +transition(1s)
+
+      image
+        +size(175px 359.722222px)
+
+    @media screen and (max-width: 380px)
+      right: -10%
 
 
     a
@@ -241,6 +252,16 @@ section
     margin: 100px auto 50px
   .feature3, .feature4
     margin: 0px auto 150px
+
+  @media screen and (max-width: 768px)
+    .col-xs-offset-right-6
+      margin: 0 50% 0 5%
+
+      [class*='feature']
+        margin: 50px 0 0
+
+      .feature4
+        margin-bottom: 50px
 
 ////////////////////
 // CALL TO ACTION //
@@ -516,3 +537,18 @@ footer
 
     ul li a
       color: $primary
+
+//////////////////////////
+// MOBILE LAYOUT HELPER //
+//////////////////////////
+@media screen and (max-width: 768px)
+  svg#feature
+    position: fixed !important
+    z-index: -2
+
+  .mobile-cover
+    position: relative
+    z-index: 2
+
+  footer
+    position: relative

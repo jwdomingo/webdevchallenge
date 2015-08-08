@@ -37,7 +37,7 @@ header {
 .container-fluid {
   padding: 0px; }
 
-@media screen and (max-width: 797px) {
+@media screen and (max-width: 768px) {
   body {
     padding-left: 0px;
     padding-right: 0px; } }
@@ -49,16 +49,13 @@ header {
   padding-right: 0;
   padding-left: 0; }
 
-@media screen and (max-width: 768px) {
-  .col-xs-offset-right-6 {
-    margin-right: 50%; } }
 section {
   background-color: #f4f4f4; }
   section#social {
     margin-bottom: 130px; }
     @media screen and (max-width: 768px) {
       section#social {
-        margin-bottom: 330px; } }
+        margin-bottom: 0; } }
 
 body {
   position: relative;
@@ -104,6 +101,9 @@ header {
     header .title img.arrow {
       vertical-align: bottom;
       margin-top: 65px; }
+      @media screen and (max-width: 768px) {
+        header .title img.arrow {
+          display: none; } }
 
 section svg#feature {
   height: 740px;
@@ -143,7 +143,22 @@ section svg#feature {
         width: 225px; } }
   @media screen and (max-width: 768px) {
     section svg#feature {
-      margin-left: 60px; } }
+      margin-left: 0;
+      left: auto;
+      right: 5%; } }
+  @media screen and (max-width: 575px) {
+    section svg#feature {
+      height: 359.72222px;
+      width: 175px;
+      -webkit-transition: 1s;
+      -moz-transition: 1s;
+      transition: 1s; }
+      section svg#feature image {
+        height: 359.72222px;
+        width: 175px; } }
+  @media screen and (max-width: 380px) {
+    section svg#feature {
+      right: -10%; } }
   section svg#feature a {
     cursor: pointer; }
     section svg#feature a:active line, section svg#feature a:hover line, section svg#feature a:focus line {
@@ -191,6 +206,13 @@ section .feature1, section .feature2 {
   margin: 100px auto 50px; }
 section .feature3, section .feature4 {
   margin: 0px auto 150px; }
+@media screen and (max-width: 768px) {
+  section .col-xs-offset-right-6 {
+    margin: 0 50% 0 5%; }
+    section .col-xs-offset-right-6 [class*='feature'] {
+      margin: 50px 0 0; }
+    section .col-xs-offset-right-6 .feature4 {
+      margin-bottom: 50px; } }
 
 section#call-to-action {
   background-color: #e3e3e3; }
@@ -433,5 +455,17 @@ footer {
     text-align: center; }
     footer nav ul li a {
       color: #e3e3e3; }
+
+@media screen and (max-width: 768px) {
+  svg#feature {
+    position: fixed !important;
+    z-index: -2; }
+
+  .mobile-cover {
+    position: relative;
+    z-index: 2; }
+
+  footer {
+    position: relative; } }
 
 /*# sourceMappingURL=style.css.map */
