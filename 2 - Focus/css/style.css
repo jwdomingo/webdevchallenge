@@ -206,6 +206,9 @@ section .feature1, section .feature2 {
   margin: 100px auto 50px; }
 section .feature3, section .feature4 {
   margin: 0px auto 150px; }
+@media screen and (max-width: 992px) {
+  section .col-xs-offset-right-6 {
+    margin: 0 50% 0 5%; } }
 @media screen and (max-width: 768px) {
   section .col-xs-offset-right-6 {
     margin: 0 50% 0 5%; }
