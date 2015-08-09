@@ -222,7 +222,7 @@ section
       line
         stroke: black
         stroke-width: 1
-        opacity: 0
+        opacity: 1
         +transition(.3s)
 
         &[class*='ln']
@@ -269,7 +269,7 @@ section
           &.ln3
             +transform(translate(5px, -49px) scale(0.8,0.9))
           &.ln4
-            +transform(translate(45px, 91px) scale(0.7,0.6))
+            +transform(translate(45px, 120px) scale(0.7,0.6))
 
         circle
           +transition(1.5s)
@@ -280,30 +280,29 @@ section
           &.pt3
             +transform(translate(-22px, -101px))
           &.pt4
-            +transform(translate(-20px, -75px))
+            +transform(translate(-20px, -46px))
 
       @media screen and (max-width: 992px)
-        opacity: 1
         line
           &.ln1
-            +transform(translate(65px, -35px) scale(0.7,0.6))
+            +transform(translate(40px, 40px) scale(0.5,0.4))
           &.ln2
-            +transform(translate(-65px, 240px) scale(0.8,-0.1))
+            +transform(translate(-25px, 240px) scale(0.7,-0.1))
           &.ln3
             +transform(translate(-5px, -150px) scale(0.4,1))
           &.ln4
-            +transform(translate(-25px, 80px) scale(0.7,0.6))
+            +transform(translate(-65px, 80px) scale(0.8,0.6))
 
         circle
           +transition(1.5s)
           &.pt1
-            +transform(translate(39px, -155px))
+            +transform(translate(-11px, -137px))
           &.pt2
-            +transform(translate(-110px, 24px))
+            +transform(translate(-100px, 25px))
           &.pt3
             +transform(translate(-84px, -151px))
           &.pt4
-            +transform(translate(-93px, -89px))
+            +transform(translate(-115px, -92px))
 
       @media screen and (max-width: 768px)
         line, circle
