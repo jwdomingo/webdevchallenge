@@ -208,6 +208,7 @@ section
           opacity: 1
 
         circle
+          +transition
           &.pt-out:hover
             r: 20px
             fill: red
@@ -272,6 +273,31 @@ section
           &.pt4
             +transform(translate(-20px, -75px))
 
+      @media screen and (max-width: 992px)
+        line
+          &.ln1
+            +transform(translate(65px, -35px) scale(0.7,0.6))
+          &.ln2
+            +transform(translate(-65px, 240px) scale(0.8,-0.1))
+          &.ln3
+            +transform(translate(-5px, -150px) scale(0.4,1))
+          &.ln4
+            +transform(translate(-25px, 80px) scale(0.7,0.6))
+
+        circle
+          +transition(1.5s)
+          &.pt1
+            +transform(translate(39px, -155px))
+          &.pt2
+            +transform(translate(-110px, 24px))
+          &.pt3
+            +transform(translate(-84px, -151px))
+          &.pt4
+            +transform(translate(-93px, -89px))
+
+      @media screen and (max-width: 768px)
+        line, circle
+          display: none
 
   // Product Descriptions
 
@@ -295,7 +321,6 @@ section
 
     @media screen and (max-width: 992px)
       margin-bottom: 50px
-
 
   @media screen and (max-width: 768px)
     .col-xs-offset-right-6
