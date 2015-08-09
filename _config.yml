@@ -1,14 +1,12 @@
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+title: 30-Day Web Development Challenge
+email: johnwill.domingo@gmail.com
+description: The challenge is to develop four simple single-page websites in thirty days using open source design template resources. Each thirty-day segment has thematic parameters such as CSS-only pages, Parallax sites, form designs, etc. Check out the repo for all the exciting creations!
+baseurl: "/webdevchallenge/" # the subpath of your site, e.g. /blog/
+url: "http://johndomingo.com" # the base hostname & protocol for your site
+twitter_username: jwdomingo
+github_username:  jwdomingo
 
 # Build settings
 markdown: kramdown
+permalink: /:title
