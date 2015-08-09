@@ -186,6 +186,18 @@ section svg#feature {
       -webkit-transition: 0.3s;
       -moz-transition: 0.3s;
       transition: 0.3s; }
+      section svg#feature a line[class*='ln'] {
+        -webkit-transform: translate(0px, 30px);
+        -moz-transform: translate(0px, 30px);
+        -ms-transform: translate(0px, 30px);
+        -o-transform: translate(0px, 30px);
+        transform: translate(0px, 30px); }
+      section svg#feature a line.ln1 {
+        -webkit-transform: translate(0px, 20px);
+        -moz-transform: translate(0px, 20px);
+        -ms-transform: translate(0px, 20px);
+        -o-transform: translate(0px, 20px);
+        transform: translate(0px, 20px); }
     section svg#feature a circle {
       -webkit-transition: 1.5s;
       -moz-transition: 1.5s;
@@ -197,9 +209,20 @@ section svg#feature {
         r: 10px;
         fill: white;
         fill-opacity: 0.25; }
+      section svg#feature a circle[class*='pt'] {
+        -webkit-transform: translate(0px, 30px);
+        -moz-transform: translate(0px, 30px);
+        -ms-transform: translate(0px, 30px);
+        -o-transform: translate(0px, 30px);
+        transform: translate(0px, 30px); }
       section svg#feature a circle.pt1 {
         cx: 100px;
-        cy: 295px; }
+        cy: 295px;
+        -webkit-transform: translate(0px, 20px);
+        -moz-transform: translate(0px, 20px);
+        -ms-transform: translate(0px, 20px);
+        -o-transform: translate(0px, 20px);
+        transform: translate(0px, 20px); }
       section svg#feature a circle.pt2 {
         cx: 250px;
         cy: 195px; }
@@ -263,58 +286,60 @@ section svg#feature {
           -o-transform: translate(-20px, -75px);
           transform: translate(-20px, -75px); } }
     @media screen and (max-width: 992px) {
-      section svg#feature a line.ln1 {
-        -webkit-transform: translate(65px, -35px) scale(0.7, 0.6);
-        -moz-transform: translate(65px, -35px) scale(0.7, 0.6);
-        -ms-transform: translate(65px, -35px) scale(0.7, 0.6);
-        -o-transform: translate(65px, -35px) scale(0.7, 0.6);
-        transform: translate(65px, -35px) scale(0.7, 0.6); }
-      section svg#feature a line.ln2 {
-        -webkit-transform: translate(-65px, 240px) scale(0.8, -0.1);
-        -moz-transform: translate(-65px, 240px) scale(0.8, -0.1);
-        -ms-transform: translate(-65px, 240px) scale(0.8, -0.1);
-        -o-transform: translate(-65px, 240px) scale(0.8, -0.1);
-        transform: translate(-65px, 240px) scale(0.8, -0.1); }
-      section svg#feature a line.ln3 {
-        -webkit-transform: translate(-5px, -150px) scale(0.4, 1);
-        -moz-transform: translate(-5px, -150px) scale(0.4, 1);
-        -ms-transform: translate(-5px, -150px) scale(0.4, 1);
-        -o-transform: translate(-5px, -150px) scale(0.4, 1);
-        transform: translate(-5px, -150px) scale(0.4, 1); }
-      section svg#feature a line.ln4 {
-        -webkit-transform: translate(-25px, 80px) scale(0.7, 0.6);
-        -moz-transform: translate(-25px, 80px) scale(0.7, 0.6);
-        -ms-transform: translate(-25px, 80px) scale(0.7, 0.6);
-        -o-transform: translate(-25px, 80px) scale(0.7, 0.6);
-        transform: translate(-25px, 80px) scale(0.7, 0.6); }
-      section svg#feature a circle {
-        -webkit-transition: 1.5s;
-        -moz-transition: 1.5s;
-        transition: 1.5s; }
-        section svg#feature a circle.pt1 {
-          -webkit-transform: translate(39px, -155px);
-          -moz-transform: translate(39px, -155px);
-          -ms-transform: translate(39px, -155px);
-          -o-transform: translate(39px, -155px);
-          transform: translate(39px, -155px); }
-        section svg#feature a circle.pt2 {
-          -webkit-transform: translate(-110px, 24px);
-          -moz-transform: translate(-110px, 24px);
-          -ms-transform: translate(-110px, 24px);
-          -o-transform: translate(-110px, 24px);
-          transform: translate(-110px, 24px); }
-        section svg#feature a circle.pt3 {
-          -webkit-transform: translate(-84px, -151px);
-          -moz-transform: translate(-84px, -151px);
-          -ms-transform: translate(-84px, -151px);
-          -o-transform: translate(-84px, -151px);
-          transform: translate(-84px, -151px); }
-        section svg#feature a circle.pt4 {
-          -webkit-transform: translate(-93px, -89px);
-          -moz-transform: translate(-93px, -89px);
-          -ms-transform: translate(-93px, -89px);
-          -o-transform: translate(-93px, -89px);
-          transform: translate(-93px, -89px); } }
+      section svg#feature a {
+        opacity: 1; }
+        section svg#feature a line.ln1 {
+          -webkit-transform: translate(65px, -35px) scale(0.7, 0.6);
+          -moz-transform: translate(65px, -35px) scale(0.7, 0.6);
+          -ms-transform: translate(65px, -35px) scale(0.7, 0.6);
+          -o-transform: translate(65px, -35px) scale(0.7, 0.6);
+          transform: translate(65px, -35px) scale(0.7, 0.6); }
+        section svg#feature a line.ln2 {
+          -webkit-transform: translate(-65px, 240px) scale(0.8, -0.1);
+          -moz-transform: translate(-65px, 240px) scale(0.8, -0.1);
+          -ms-transform: translate(-65px, 240px) scale(0.8, -0.1);
+          -o-transform: translate(-65px, 240px) scale(0.8, -0.1);
+          transform: translate(-65px, 240px) scale(0.8, -0.1); }
+        section svg#feature a line.ln3 {
+          -webkit-transform: translate(-5px, -150px) scale(0.4, 1);
+          -moz-transform: translate(-5px, -150px) scale(0.4, 1);
+          -ms-transform: translate(-5px, -150px) scale(0.4, 1);
+          -o-transform: translate(-5px, -150px) scale(0.4, 1);
+          transform: translate(-5px, -150px) scale(0.4, 1); }
+        section svg#feature a line.ln4 {
+          -webkit-transform: translate(-25px, 80px) scale(0.7, 0.6);
+          -moz-transform: translate(-25px, 80px) scale(0.7, 0.6);
+          -ms-transform: translate(-25px, 80px) scale(0.7, 0.6);
+          -o-transform: translate(-25px, 80px) scale(0.7, 0.6);
+          transform: translate(-25px, 80px) scale(0.7, 0.6); }
+        section svg#feature a circle {
+          -webkit-transition: 1.5s;
+          -moz-transition: 1.5s;
+          transition: 1.5s; }
+          section svg#feature a circle.pt1 {
+            -webkit-transform: translate(39px, -155px);
+            -moz-transform: translate(39px, -155px);
+            -ms-transform: translate(39px, -155px);
+            -o-transform: translate(39px, -155px);
+            transform: translate(39px, -155px); }
+          section svg#feature a circle.pt2 {
+            -webkit-transform: translate(-110px, 24px);
+            -moz-transform: translate(-110px, 24px);
+            -ms-transform: translate(-110px, 24px);
+            -o-transform: translate(-110px, 24px);
+            transform: translate(-110px, 24px); }
+          section svg#feature a circle.pt3 {
+            -webkit-transform: translate(-84px, -151px);
+            -moz-transform: translate(-84px, -151px);
+            -ms-transform: translate(-84px, -151px);
+            -o-transform: translate(-84px, -151px);
+            transform: translate(-84px, -151px); }
+          section svg#feature a circle.pt4 {
+            -webkit-transform: translate(-93px, -89px);
+            -moz-transform: translate(-93px, -89px);
+            -ms-transform: translate(-93px, -89px);
+            -o-transform: translate(-93px, -89px);
+            transform: translate(-93px, -89px); } }
     @media screen and (max-width: 768px) {
       section svg#feature a line, section svg#feature a circle {
         display: none; } }

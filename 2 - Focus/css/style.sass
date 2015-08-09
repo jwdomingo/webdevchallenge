@@ -225,6 +225,11 @@ section
         opacity: 0
         +transition(.3s)
 
+        &[class*='ln']
+          +transform(translate(0px, 30px))
+        &.ln1
+          +transform(translate(0px, 20px))
+
       circle
         +transition(1.5s)
 
@@ -237,9 +242,13 @@ section
           fill: white
           fill-opacity: 0.25
 
+        &[class*='pt']
+          +transform(translate(0px, 30px))
+
         &.pt1
           cx: 100px
           cy: 295px
+          +transform(translate(0px, 20px))
         &.pt2
           cx: 250px
           cy: 195px
@@ -274,6 +283,7 @@ section
             +transform(translate(-20px, -75px))
 
       @media screen and (max-width: 992px)
+        opacity: 1
         line
           &.ln1
             +transform(translate(65px, -35px) scale(0.7,0.6))
