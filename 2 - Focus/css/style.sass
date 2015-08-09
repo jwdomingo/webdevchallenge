@@ -117,15 +117,16 @@ header
   position: relative
   z-index: 2
   height: 650px
+  background-color: red
 
   @media screen and (max-width: 1200px)
-    background-size: contain
-    height: 550px
-  @media screen and (max-width: 992px)
+    background-size: 100% auto
     height: 500px
+  @media screen and (max-width: 992px)
+    background-size: 100% auto
+    height: 420px
   @media screen and (max-width: 768px)
-    background-size: cover
-    height: 450px
+    background-size: 100% auto
 
   background:
     image: url('../assets/bg-lg.png')
@@ -169,6 +170,7 @@ section
     @media screen and (max-width: 1200px)
       +size(280px 760.555556px)
       margin-left: -140px
+      top: 300px
       +transition(1s)
 
       image
@@ -252,10 +254,6 @@ section
     margin: 100px auto 50px
   .feature3, .feature4
     margin: 0px auto 150px
-
-  @media screen and (max-width: 992px)
-    .col-xs-offset-right-6
-      margin: 0 50% 0 5%
 
   @media screen and (max-width: 768px)
     .col-xs-offset-right-6

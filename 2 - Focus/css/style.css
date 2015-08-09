@@ -78,6 +78,7 @@ header {
   position: relative;
   z-index: 2;
   height: 650px;
+  background-color: red;
   background-image: url("../assets/bg-lg.png");
   background-size: cover;
   background-position: top center;
@@ -85,15 +86,15 @@ header {
   background-attachment: fixed; }
   @media screen and (max-width: 1200px) {
     header {
-      background-size: contain;
-      height: 550px; } }
+      background-size: 100% auto;
+      height: 500px; } }
   @media screen and (max-width: 992px) {
     header {
-      height: 500px; } }
+      background-size: 100% auto;
+      height: 420px; } }
   @media screen and (max-width: 768px) {
     header {
-      background-size: cover;
-      height: 450px; } }
+      background-size: 100% auto; } }
   header .title {
     margin-top: 115px; }
     header .title img.logo {
@@ -124,6 +125,7 @@ section svg#feature {
       height: 760.55556px;
       width: 280px;
       margin-left: -140px;
+      top: 300px;
       -webkit-transition: 1s;
       -moz-transition: 1s;
       transition: 1s; }
@@ -206,9 +208,6 @@ section .feature1, section .feature2 {
   margin: 100px auto 50px; }
 section .feature3, section .feature4 {
   margin: 0px auto 150px; }
-@media screen and (max-width: 992px) {
-  section .col-xs-offset-right-6 {
-    margin: 0 50% 0 5%; } }
 @media screen and (max-width: 768px) {
   section .col-xs-offset-right-6 {
     margin: 0 50% 0 5%; }
