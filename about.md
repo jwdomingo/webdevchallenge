@@ -4,8 +4,8 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+The challenge is to develop four simple single-page websites in a given thirty-day period using open source design template resources.
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+Each thirty-day segment has specific thematic parameters such as CSS-only pages, Parallax websites, form design templates, etc.
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+Check out the [GitHub repo](https://github.com/jwdomingo/webdevchallenge) for all the exciting creations!
