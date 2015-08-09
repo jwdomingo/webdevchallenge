@@ -106,6 +106,27 @@ header {
         header .title img.arrow {
           display: none; } }
 
+@media screen and (max-width: 768px) {
+  section .screen {
+    height: 327px;
+    width: 185px;
+    position: fixed;
+    top: 378px;
+    right: 5%;
+    bottom: 0;
+    left: auto;
+    margin-right: 20px;
+    z-index: 3;
+    border: 1px red solid;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-image: url("http://longstreet.typepad.com/.a/6a00d83542d51e69e2016766549ec3970b-pi");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: local; }
+    section .screen .contents {
+      height: 2700px;
+      width: 100%; } }
 section svg#feature {
   height: 740px;
   width: 360px;
@@ -182,7 +203,7 @@ section svg#feature {
     section svg#feature a line {
       stroke: black;
       stroke-width: 1;
-      opacity: 1;
+      opacity: 0;
       -webkit-transition: 0.3s;
       -moz-transition: 0.3s;
       transition: 0.3s; }
@@ -614,7 +635,7 @@ footer {
 
   .mobile-cover {
     position: relative;
-    z-index: 2; }
+    z-index: 4; }
 
   footer {
     position: relative; } }

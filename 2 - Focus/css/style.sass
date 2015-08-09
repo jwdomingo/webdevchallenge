@@ -152,6 +152,23 @@ header
 /////////////
 
 section
+  @media screen and (max-width: 768px)
+    .screen
+      +size(185px 327px)
+      +position(fixed, 378px 5% 0 auto)
+      margin-right: 20px
+      z-index: 3
+      border: 1px red solid
+      overflow-x: hidden
+      overflow-y: scroll
+      background:
+        image: url('http://longstreet.typepad.com/.a/6a00d83542d51e69e2016766549ec3970b-pi')
+        position: top center
+        repeat: no-repeat
+        attachment: local
+      .contents
+        +size(100% 2700px)
+
   svg#feature
     +size(360px 740px)
     position: absolute
@@ -222,7 +239,7 @@ section
       line
         stroke: black
         stroke-width: 1
-        opacity: 1
+        opacity: 0
         +transition(.3s)
 
         &[class*='ln']
@@ -622,7 +639,7 @@ footer
 
   .mobile-cover
     position: relative
-    z-index: 2
+    z-index: 4
 
   footer
     position: relative
