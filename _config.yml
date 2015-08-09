@@ -2,7 +2,7 @@
 title: 30-Day Web Development Challenge
 email: johnwill.domingo@gmail.com
 description: The challenge is to develop four simple single-page websites in thirty days using open source design template resources. Each thirty-day segment has thematic parameters such as CSS-only pages, Parallax sites, form designs, etc. Check out the repo for all the exciting creations!
-baseurl: "/webdevchallenge/" # the subpath of your site, e.g. /blog/
+baseurl: "/webdevchallenge" # the subpath of your site, e.g. /blog/
 url: "http://johndomingo.com" # the base hostname & protocol for your site
 twitter_username: jwdomingo
 github_username:  jwdomingo
