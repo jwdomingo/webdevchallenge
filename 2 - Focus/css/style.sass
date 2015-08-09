@@ -143,7 +143,9 @@ header
       vertical-align: bottom
       margin-top: 65px
 
-      @media screen and (max-width: 768px)
+      @media screen and (max-width: 1200px)
+        margin-top: 50px
+      @media screen and (max-width: 992px)
         display: none
 
 /////////////
@@ -166,17 +168,18 @@ section
       +size(360px 740px)
 
     @media screen and (max-width: 1200px)
-      +size(280px 760.555556px)
+      +size(280px 575.555556px)
       margin-left: -140px
-      top: 300px
+      top: 375px
       +transition(1s)
 
       image
-        +size(280px 760.555556px)
+        +size(280px 575.555556px)
 
     @media screen and (max-width: 992px)
       +size(225px 462.5px)
       margin-left: -112.5px
+      top: 310px
       +transition(1s)
 
       image
@@ -248,7 +251,7 @@ section
           cx: 235px
           cy: 425px
 
-  [class*='feature'] h3, p
+  [class*='feature'] h3, [class*='feature'] p
     position: relative
     z-index: 2
     background-color: $bkg-color
@@ -259,6 +262,7 @@ section
     @media screen and (max-width: 1200px)
 
     @media screen and (max-width: 992px)
+      margin: 60px auto 40px
 
     @media screen and (max-width: 768px)
 
@@ -267,8 +271,10 @@ section
     margin: 0px auto 150px
 
     @media screen and (max-width: 1200px)
+      margin-bottom: 100px
 
     @media screen and (max-width: 992px)
+      margin-bottom: 50px
 
     @media screen and (max-width: 768px)
 

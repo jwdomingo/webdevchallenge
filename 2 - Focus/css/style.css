@@ -100,7 +100,10 @@ header {
     header .title img.arrow {
       vertical-align: bottom;
       margin-top: 65px; }
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 1200px) {
+        header .title img.arrow {
+          margin-top: 50px; } }
+      @media screen and (max-width: 992px) {
         header .title img.arrow {
           display: none; } }
 
@@ -120,21 +123,22 @@ section svg#feature {
     width: 360px; }
   @media screen and (max-width: 1200px) {
     section svg#feature {
-      height: 760.55556px;
+      height: 575.55556px;
       width: 280px;
       margin-left: -140px;
-      top: 300px;
+      top: 375px;
       -webkit-transition: 1s;
       -moz-transition: 1s;
       transition: 1s; }
       section svg#feature image {
-        height: 760.55556px;
+        height: 575.55556px;
         width: 280px; } }
   @media screen and (max-width: 992px) {
     section svg#feature {
       height: 462.5px;
       width: 225px;
       margin-left: -112.5px;
+      top: 310px;
       -webkit-transition: 1s;
       -moz-transition: 1s;
       transition: 1s; }
@@ -202,14 +206,23 @@ section svg#feature {
       section svg#feature a circle.pt4 {
         cx: 235px;
         cy: 425px; }
-section [class*='feature'] h3, section p {
+section [class*='feature'] h3, section [class*='feature'] p {
   position: relative;
   z-index: 2;
   background-color: #f4f4f4; }
 section .feature1, section .feature2 {
   margin: 100px auto 50px; }
+  @media screen and (max-width: 992px) {
+    section .feature1, section .feature2 {
+      margin: 60px auto 40px; } }
 section .feature3, section .feature4 {
   margin: 0px auto 150px; }
+  @media screen and (max-width: 1200px) {
+    section .feature3, section .feature4 {
+      margin-bottom: 100px; } }
+  @media screen and (max-width: 992px) {
+    section .feature3, section .feature4 {
+      margin-bottom: 50px; } }
 @media screen and (max-width: 768px) {
   section .col-xs-offset-right-6 {
     margin: 0 50% 0 5%; }
