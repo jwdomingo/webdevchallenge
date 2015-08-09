@@ -78,7 +78,6 @@ header {
   position: relative;
   z-index: 2;
   height: 650px;
-  background-color: red;
   background-image: url("../assets/bg-lg.png");
   background-size: cover;
   background-position: top center;
@@ -169,7 +168,7 @@ section svg#feature {
       opacity: 1; }
     section svg#feature a:active circle.pt-out:hover, section svg#feature a:hover circle.pt-out:hover, section svg#feature a:focus circle.pt-out:hover {
       r: 20px;
-      fill: white; }
+      fill: red; }
     section svg#feature a:active circle.pt-out:hover + .pt-in, section svg#feature a:hover circle.pt-out:hover + .pt-in, section svg#feature a:focus circle.pt-out:hover + .pt-in {
       r: 6px;
       fill: #222; }
@@ -184,9 +183,9 @@ section svg#feature {
       -moz-transition: 0.3s;
       transition: 0.3s; }
     section svg#feature a circle {
-      -webkit-transition: all 0.15s ease-out 0s;
-      -moz-transition: all 0.15s ease-out 0s;
-      transition: all 0.15s ease-out 0s; }
+      -webkit-transition: 1.5s;
+      -moz-transition: 1.5s;
+      transition: 1.5s; }
       section svg#feature a circle.pt-in {
         r: 7px;
         fill: #f6f6f6; }
@@ -206,9 +205,63 @@ section svg#feature {
       section svg#feature a circle.pt4 {
         cx: 235px;
         cy: 425px; }
+    @media screen and (max-width: 1200px) {
+      section svg#feature a line.ln1 {
+        -webkit-transform: translate(0px, 20px) scale(0.7, 0.6);
+        -moz-transform: translate(0px, 20px) scale(0.7, 0.6);
+        -ms-transform: translate(0px, 20px) scale(0.7, 0.6);
+        -o-transform: translate(0px, 20px) scale(0.7, 0.6);
+        transform: translate(0px, 20px) scale(0.7, 0.6); }
+      section svg#feature a line.ln2 {
+        -webkit-transform: translate(-79px, 295px) scale(1, -0.1);
+        -moz-transform: translate(-79px, 295px) scale(1, -0.1);
+        -ms-transform: translate(-79px, 295px) scale(1, -0.1);
+        -o-transform: translate(-79px, 295px) scale(1, -0.1);
+        transform: translate(-79px, 295px) scale(1, -0.1); }
+      section svg#feature a line.ln3 {
+        -webkit-transform: translate(5px, -49px) scale(0.8, 0.9);
+        -moz-transform: translate(5px, -49px) scale(0.8, 0.9);
+        -ms-transform: translate(5px, -49px) scale(0.8, 0.9);
+        -o-transform: translate(5px, -49px) scale(0.8, 0.9);
+        transform: translate(5px, -49px) scale(0.8, 0.9); }
+      section svg#feature a line.ln4 {
+        -webkit-transform: translate(45px, 91px) scale(0.7, 0.6);
+        -moz-transform: translate(45px, 91px) scale(0.7, 0.6);
+        -ms-transform: translate(45px, 91px) scale(0.7, 0.6);
+        -o-transform: translate(45px, 91px) scale(0.7, 0.6);
+        transform: translate(45px, 91px) scale(0.7, 0.6); }
+      section svg#feature a circle {
+        -webkit-transition: 1.5s;
+        -moz-transition: 1.5s;
+        transition: 1.5s; }
+        section svg#feature a circle.pt1 {
+          -webkit-transform: translate(-27px, -99px);
+          -moz-transform: translate(-27px, -99px);
+          -ms-transform: translate(-27px, -99px);
+          -o-transform: translate(-27px, -99px);
+          transform: translate(-27px, -99px); }
+        section svg#feature a circle.pt2 {
+          -webkit-transform: translate(-77px, 80px);
+          -moz-transform: translate(-77px, 80px);
+          -ms-transform: translate(-77px, 80px);
+          -o-transform: translate(-77px, 80px);
+          transform: translate(-77px, 80px); }
+        section svg#feature a circle.pt3 {
+          -webkit-transform: translate(-22px, -101px);
+          -moz-transform: translate(-22px, -101px);
+          -ms-transform: translate(-22px, -101px);
+          -o-transform: translate(-22px, -101px);
+          transform: translate(-22px, -101px); }
+        section svg#feature a circle.pt4 {
+          -webkit-transform: translate(-20px, -75px);
+          -moz-transform: translate(-20px, -75px);
+          -ms-transform: translate(-20px, -75px);
+          -o-transform: translate(-20px, -75px);
+          transform: translate(-20px, -75px); } }
 section [class*='feature'] h3, section [class*='feature'] p {
   position: relative;
   z-index: 2;
+  display: inline-block;
   background-color: #f4f4f4; }
 section .feature1, section .feature2 {
   margin: 100px auto 50px; }
