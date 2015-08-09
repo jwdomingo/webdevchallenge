@@ -120,13 +120,11 @@ header
   background-color: red
 
   @media screen and (max-width: 1200px)
-    background-size: 100% auto
     height: 500px
   @media screen and (max-width: 992px)
-    background-size: 100% auto
     height: 420px
   @media screen and (max-width: 768px)
-    background-size: 100% auto
+    height: 500px
 
   background:
     image: url('../assets/bg-lg.png')
@@ -250,10 +248,30 @@ section
           cx: 235px
           cy: 425px
 
+  [class*='feature'] h3, p
+    position: relative
+    z-index: 2
+    background-color: $bkg-color
+
   .feature1, .feature2
     margin: 100px auto 50px
+
+    @media screen and (max-width: 1200px)
+
+    @media screen and (max-width: 992px)
+
+    @media screen and (max-width: 768px)
+
+
   .feature3, .feature4
     margin: 0px auto 150px
+
+    @media screen and (max-width: 1200px)
+
+    @media screen and (max-width: 992px)
+
+    @media screen and (max-width: 768px)
+
 
   @media screen and (max-width: 768px)
     .col-xs-offset-right-6
@@ -269,7 +287,7 @@ section
 // CALL TO ACTION //
 ////////////////////
 
-section#call-to-action
+section#download
   background-color: $primary
 
   .container
@@ -302,10 +320,11 @@ section#call-to-action
 // TESTIMONIALS //
 //////////////////
 
-section
+section#testimonials
   overflow-x: scroll
+  position: relative
 
-  #testimonials
+  .testimonials-container
     padding: 150px 0 0 0
     margin: 0
     width: 1600px
@@ -473,17 +492,14 @@ section
 
       .quote
         position: absolute
-        top: 1522px
-        left: 0
+        top: 0px
+        left: 0px
         width: 100%
         padding: 0px
         margin: 0px
         text-align: center
         background-color: $bkg-color
         opacity: 0
-
-        @media screen and (max-width: 1200px)
-          top: 1582px
 
         h3
           margin: 40px 0 30px

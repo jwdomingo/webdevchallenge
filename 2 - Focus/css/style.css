@@ -86,15 +86,13 @@ header {
   background-attachment: fixed; }
   @media screen and (max-width: 1200px) {
     header {
-      background-size: 100% auto;
       height: 500px; } }
   @media screen and (max-width: 992px) {
     header {
-      background-size: 100% auto;
       height: 420px; } }
   @media screen and (max-width: 768px) {
     header {
-      background-size: 100% auto; } }
+      height: 500px; } }
   header .title {
     margin-top: 115px; }
     header .title img.logo {
@@ -204,6 +202,10 @@ section svg#feature {
       section svg#feature a circle.pt4 {
         cx: 235px;
         cy: 425px; }
+section [class*='feature'] h3, section p {
+  position: relative;
+  z-index: 2;
+  background-color: #f4f4f4; }
 section .feature1, section .feature2 {
   margin: 100px auto 50px; }
 section .feature3, section .feature4 {
@@ -216,217 +218,215 @@ section .feature3, section .feature4 {
     section .col-xs-offset-right-6 .feature4 {
       margin-bottom: 50px; } }
 
-section#call-to-action {
+section#download {
   background-color: #e3e3e3; }
-  section#call-to-action .container .row h3 {
+  section#download .container .row h3 {
     margin: 60px 0 20px; }
-  section#call-to-action .container .row p {
+  section#download .container .row p {
     margin: 0 0 30px; }
-  section#call-to-action .container .row ul.list-inline {
+  section#download .container .row ul.list-inline {
     margin: 0 0 90px;
     font-size: 2.75em; }
-    section#call-to-action .container .row ul.list-inline li {
+    section#download .container .row ul.list-inline li {
       padding: 0 10px; }
-      section#call-to-action .container .row ul.list-inline li:first-child {
+      section#download .container .row ul.list-inline li:first-child {
         padding-left: 0; }
-      section#call-to-action .container .row ul.list-inline li .frame {
+      section#download .container .row ul.list-inline li .frame {
         height: 75px;
         width: 75px;
         line-height: 75px; }
-  section#call-to-action .container .row iframe {
+  section#download .container .row iframe {
     height: 240px;
     margin-top: 60px;
     border-radius: 10px; }
 
-section {
-  overflow-x: scroll; }
-  section #testimonials {
+section#testimonials {
+  overflow-x: scroll;
+  position: relative; }
+  section#testimonials .testimonials-container {
     padding: 150px 0 0 0;
     margin: 0;
     width: 1600px;
     height: 400px; }
-    section #testimonials a {
+    section#testimonials .testimonials-container a {
       float: left;
       color: #848484; }
-      section #testimonials a [class*='thumb'] {
+      section#testimonials .testimonials-container a [class*='thumb'] {
         -webkit-filter: grayscale(1);
         filter: grayscale(1);
         height: 88.81px;
         width: 88.81px;
         cursor: pointer;
         background-image: url("../assets/avatars.png"); }
-        section #testimonials a [class*='thumb']:active, section #testimonials a [class*='thumb']:hover, section #testimonials a [class*='thumb']:focus {
+        section#testimonials .testimonials-container a [class*='thumb']:active, section#testimonials .testimonials-container a [class*='thumb']:hover, section#testimonials .testimonials-container a [class*='thumb']:focus {
           -webkit-filter: grayscale(0);
           filter: grayscale(0);
           -webkit-transition: all 0.15s ease-out 0s;
           -moz-transition: all 0.15s ease-out 0s;
           transition: all 0.15s ease-out 0s; }
-      section #testimonials a .thumb01 {
+      section#testimonials .testimonials-container a .thumb01 {
         background-position: 0 0; }
-      section #testimonials a .thumb02 {
+      section#testimonials .testimonials-container a .thumb02 {
         background-position: -88.81px 0; }
-      section #testimonials a .thumb03 {
+      section#testimonials .testimonials-container a .thumb03 {
         background-position: -177.62px 0; }
-      section #testimonials a .thumb04 {
+      section#testimonials .testimonials-container a .thumb04 {
         background-position: -266.43px 0; }
-      section #testimonials a .thumb05 {
+      section#testimonials .testimonials-container a .thumb05 {
         background-position: -355.24px 0; }
-      section #testimonials a .thumb06 {
+      section#testimonials .testimonials-container a .thumb06 {
         background-position: -444.05px 0; }
-      section #testimonials a .thumb07 {
+      section#testimonials .testimonials-container a .thumb07 {
         background-position: -532.86px 0; }
-      section #testimonials a .thumb08 {
+      section#testimonials .testimonials-container a .thumb08 {
         background-position: -621.67px 0; }
-      section #testimonials a .thumb09 {
+      section#testimonials .testimonials-container a .thumb09 {
         background-position: -710.48px 0; }
-      section #testimonials a .thumb10 {
+      section#testimonials .testimonials-container a .thumb10 {
         background-position: -799.29px 0; }
-      section #testimonials a .thumb11 {
+      section#testimonials .testimonials-container a .thumb11 {
         background-position: -888.1px 0; }
-      section #testimonials a .thumb12 {
+      section#testimonials .testimonials-container a .thumb12 {
         background-position: -976.91px 0; }
-      section #testimonials a .thumb13 {
+      section#testimonials .testimonials-container a .thumb13 {
         background-position: -1065.72px 0; }
-      section #testimonials a .thumb14 {
+      section#testimonials .testimonials-container a .thumb14 {
         background-position: -1154.53px 0; }
-      section #testimonials a .thumb15 {
+      section#testimonials .testimonials-container a .thumb15 {
         background-position: -1243.34px 0; }
-      section #testimonials a .thumb16 {
+      section#testimonials .testimonials-container a .thumb16 {
         background-position: -1332.15px 0; }
-      section #testimonials a .thumb17 {
+      section#testimonials .testimonials-container a .thumb17 {
         background-position: -1420.96px 0; }
-      section #testimonials a .thumb18 {
+      section#testimonials .testimonials-container a .thumb18 {
         background-position: -1509.77px 0; }
-      section #testimonials a .thumb19 {
+      section#testimonials .testimonials-container a .thumb19 {
         background-position: 0 -88.81px; }
-      section #testimonials a .thumb20 {
+      section#testimonials .testimonials-container a .thumb20 {
         background-position: -88.81px -88.81px; }
-      section #testimonials a .thumb21 {
+      section#testimonials .testimonials-container a .thumb21 {
         background-position: -177.62px -88.81px; }
-      section #testimonials a .thumb22 {
+      section#testimonials .testimonials-container a .thumb22 {
         background-position: -266.43px -88.81px; }
-      section #testimonials a .thumb23 {
+      section#testimonials .testimonials-container a .thumb23 {
         background-position: -355.24px -88.81px; }
-      section #testimonials a .thumb24 {
+      section#testimonials .testimonials-container a .thumb24 {
         background-position: -444.05px -88.81px; }
-      section #testimonials a .thumb25 {
+      section#testimonials .testimonials-container a .thumb25 {
         background-position: -532.86px -88.81px; }
-      section #testimonials a .thumb26 {
+      section#testimonials .testimonials-container a .thumb26 {
         background-position: -621.67px -88.81px; }
-      section #testimonials a .thumb27 {
+      section#testimonials .testimonials-container a .thumb27 {
         background-position: -710.48px -88.81px; }
-      section #testimonials a .thumb28 {
+      section#testimonials .testimonials-container a .thumb28 {
         background-position: -799.29px -88.81px; }
-      section #testimonials a .thumb29 {
+      section#testimonials .testimonials-container a .thumb29 {
         background-position: -888.1px -88.81px; }
-      section #testimonials a .thumb30 {
+      section#testimonials .testimonials-container a .thumb30 {
         background-position: -976.91px -88.81px; }
-      section #testimonials a .thumb31 {
+      section#testimonials .testimonials-container a .thumb31 {
         background-position: -1065.72px -88.81px; }
-      section #testimonials a .thumb32 {
+      section#testimonials .testimonials-container a .thumb32 {
         background-position: -1154.53px -88.81px; }
-      section #testimonials a .thumb33 {
+      section#testimonials .testimonials-container a .thumb33 {
         background-position: -1243.34px -88.81px; }
-      section #testimonials a .thumb34 {
+      section#testimonials .testimonials-container a .thumb34 {
         background-position: -1332.15px -88.81px; }
-      section #testimonials a .thumb35 {
+      section#testimonials .testimonials-container a .thumb35 {
         background-position: -1420.96px -88.81px; }
-      section #testimonials a .thumb36 {
+      section#testimonials .testimonials-container a .thumb36 {
         background-position: -1509.77px -88.81px; }
-      section #testimonials a .thumb37 {
+      section#testimonials .testimonials-container a .thumb37 {
         background-position: 0 -177.62px; }
-      section #testimonials a .thumb38 {
+      section#testimonials .testimonials-container a .thumb38 {
         background-position: -88.81px -177.62px; }
-      section #testimonials a .thumb39 {
+      section#testimonials .testimonials-container a .thumb39 {
         background-position: -177.62px -177.62px; }
-      section #testimonials a .thumb40 {
+      section#testimonials .testimonials-container a .thumb40 {
         background-position: -266.43px -177.62px; }
-      section #testimonials a .thumb41 {
+      section#testimonials .testimonials-container a .thumb41 {
         background-position: -355.24px -177.62px; }
-      section #testimonials a .thumb42 {
+      section#testimonials .testimonials-container a .thumb42 {
         background-position: -444.05px -177.62px; }
-      section #testimonials a .thumb43 {
+      section#testimonials .testimonials-container a .thumb43 {
         background-position: -532.86px -177.62px; }
-      section #testimonials a .thumb44 {
+      section#testimonials .testimonials-container a .thumb44 {
         background-position: -621.67px -177.62px; }
-      section #testimonials a .thumb45 {
+      section#testimonials .testimonials-container a .thumb45 {
         background-position: -710.48px -177.62px; }
-      section #testimonials a .thumb46 {
+      section#testimonials .testimonials-container a .thumb46 {
         background-position: -799.29px -177.62px; }
-      section #testimonials a .thumb47 {
+      section#testimonials .testimonials-container a .thumb47 {
         background-position: -888.1px -177.62px; }
-      section #testimonials a .thumb48 {
+      section#testimonials .testimonials-container a .thumb48 {
         background-position: -976.91px -177.62px; }
-      section #testimonials a .thumb49 {
+      section#testimonials .testimonials-container a .thumb49 {
         background-position: -1065.72px -177.62px; }
-      section #testimonials a .thumb50 {
+      section#testimonials .testimonials-container a .thumb50 {
         background-position: -1154.53px -177.62px; }
-      section #testimonials a .thumb51 {
+      section#testimonials .testimonials-container a .thumb51 {
         background-position: -1243.34px -177.62px; }
-      section #testimonials a .thumb52 {
+      section#testimonials .testimonials-container a .thumb52 {
         background-position: -1332.15px -177.62px; }
-      section #testimonials a .thumb53 {
+      section#testimonials .testimonials-container a .thumb53 {
         background-position: -1420.96px -177.62px; }
-      section #testimonials a .thumb54 {
+      section#testimonials .testimonials-container a .thumb54 {
         background-position: -1509.77px -177.62px; }
-      section #testimonials a .thumb55 {
+      section#testimonials .testimonials-container a .thumb55 {
         background-position: 0 -266.43px; }
-      section #testimonials a .thumb56 {
+      section#testimonials .testimonials-container a .thumb56 {
         background-position: -88.81px -266.43px; }
-      section #testimonials a .thumb57 {
+      section#testimonials .testimonials-container a .thumb57 {
         background-position: -177.62px -266.43px; }
-      section #testimonials a .thumb58 {
+      section#testimonials .testimonials-container a .thumb58 {
         background-position: -266.43px -266.43px; }
-      section #testimonials a .thumb59 {
+      section#testimonials .testimonials-container a .thumb59 {
         background-position: -355.24px -266.43px; }
-      section #testimonials a .thumb60 {
+      section#testimonials .testimonials-container a .thumb60 {
         background-position: -444.05px -266.43px; }
-      section #testimonials a .thumb61 {
+      section#testimonials .testimonials-container a .thumb61 {
         background-position: -532.86px -266.43px; }
-      section #testimonials a .thumb62 {
+      section#testimonials .testimonials-container a .thumb62 {
         background-position: -621.67px -266.43px; }
-      section #testimonials a .thumb63 {
+      section#testimonials .testimonials-container a .thumb63 {
         background-position: -710.48px -266.43px; }
-      section #testimonials a .thumb64 {
+      section#testimonials .testimonials-container a .thumb64 {
         background-position: -799.29px -266.43px; }
-      section #testimonials a .thumb65 {
+      section#testimonials .testimonials-container a .thumb65 {
         background-position: -888.1px -266.43px; }
-      section #testimonials a .thumb66 {
+      section#testimonials .testimonials-container a .thumb66 {
         background-position: -976.91px -266.43px; }
-      section #testimonials a .thumb67 {
+      section#testimonials .testimonials-container a .thumb67 {
         background-position: -1065.72px -266.43px; }
-      section #testimonials a .thumb68 {
+      section#testimonials .testimonials-container a .thumb68 {
         background-position: -1154.53px -266.43px; }
-      section #testimonials a .thumb69 {
+      section#testimonials .testimonials-container a .thumb69 {
         background-position: -1243.34px -266.43px; }
-      section #testimonials a .thumb70 {
+      section#testimonials .testimonials-container a .thumb70 {
         background-position: -1332.15px -266.43px; }
-      section #testimonials a .thumb71 {
+      section#testimonials .testimonials-container a .thumb71 {
         background-position: -1420.96px -266.43px; }
-      section #testimonials a .thumb72 {
+      section#testimonials .testimonials-container a .thumb72 {
         background-position: -1509.77px -266.43px; }
-      section #testimonials a .quote {
+      section#testimonials .testimonials-container a .quote {
         position: absolute;
-        top: 1522px;
-        left: 0;
+        top: 0px;
+        left: 0px;
         width: 100%;
         padding: 0px;
         margin: 0px;
         text-align: center;
         background-color: #f4f4f4;
         opacity: 0; }
-        @media screen and (max-width: 1200px) {
-          section #testimonials a .quote {
-            top: 1582px; } }
-        section #testimonials a .quote h3 {
+        section#testimonials .testimonials-container a .quote h3 {
           margin: 40px 0 30px; }
-        section #testimonials a .quote p {
+        section#testimonials .testimonials-container a .quote p {
           margin: 0; }
-      section #testimonials a:active, section #testimonials a:hover, section #testimonials a:focus {
+      section#testimonials .testimonials-container a:active, section#testimonials .testimonials-container a:hover, section#testimonials .testimonials-container a:focus {
         text-decoration: none;
         pointer: none;
         color: #848484; }
-        section #testimonials a:active .quote, section #testimonials a:hover .quote, section #testimonials a:focus .quote {
+        section#testimonials .testimonials-container a:active .quote, section#testimonials .testimonials-container a:hover .quote, section#testimonials .testimonials-container a:focus .quote {
           opacity: 1;
           -webkit-transition: opacity 0.6s ease-in-out;
           -moz-transition: opacity 0.6s ease-in-out;
