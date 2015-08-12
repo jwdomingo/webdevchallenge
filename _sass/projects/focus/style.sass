@@ -51,8 +51,20 @@ header
       font-size: 4.2em
       line-height: 1.2
       padding-left: 20px
+
+      @media screen and (max-width: 575px)
+        font-size: 3.5em
+        line-height: 1.4
+
     h2
       padding-top: 20px
+
+      @media screen and (max-width: 575px)
+        font-size: 1.5em
+        color: $bkg-color
+
+      @media screen and (max-width: 380px)
+        font-size: 1.2em
 
 /////////////////////
 // BOOTSTRAP FIXES //
@@ -94,6 +106,10 @@ section
 body
   position: relative
   overflow-x: hidden
+  overflow-y: scroll
+
+  section
+    overflow: hidden !important
 
 ul.list-inline
   color: $bkg-color
@@ -122,8 +138,10 @@ header
     height: 500px
   @media screen and (max-width: 992px)
     height: 420px
-  @media screen and (max-width: 768px)
-    height: 250px
+    background-size: auto 420px
+  @media screen and (max-width: 575px)
+    height: 260px
+    background-size: auto 260px
 
   background:
     image: url('/webdevchallenge/assets/focus/bg-lg.png')
@@ -134,6 +152,9 @@ header
 
   .title
     margin-top: 115px
+
+    @media screen and (max-width: 575px)
+      margin-top: 25px
 
     img.logo
       vertical-align: top
@@ -159,8 +180,8 @@ section
       margin-right: 20px
       z-index: 3
       border: 1px red solid
-      overflow-x: hidden
-      overflow-y: scroll
+      overflow-x: visible
+      overflow-y: hidden
       background:
         image: url('http://longstreet.typepad.com/.a/6a00d83542d51e69e2016766549ec3970b-pi')
         position: top center
@@ -168,6 +189,16 @@ section
         attachment: local
       .contents
         +size(100% 2700px)
+
+  @media screen and (max-width: 575px)
+    .screen
+      +size(145px 255px)
+      +position(fixed, 242px 5% 0 auto)
+      margin-right: 15px
+
+  @media screen and (max-width: 380px)
+    .screen
+      right: -15%
 
   svg#feature
     +size(360px 740px)
@@ -182,12 +213,12 @@ section
       x: 0
       y: 0
       +size(360px 740px)
+      +transition(1s)
 
     @media screen and (max-width: 1200px)
       +size(280px 575.555556px)
       margin-left: -140px
       top: 375px
-      +transition(1s)
 
       image
         +size(280px 575.555556px)
@@ -196,7 +227,6 @@ section
       +size(225px 462.5px)
       margin-left: -112.5px
       top: 310px
-      +transition(1s)
 
       image
         +size(225px 462.5px)
@@ -208,13 +238,13 @@ section
 
     @media screen and (max-width: 575px)
       +size(175px 359.722222px)
-      +transition(1s)
+      top: 190px
 
       image
         +size(175px 359.722222px)
 
     @media screen and (max-width: 380px)
-      right: -10%
+      right: -15%
 
 
     a
