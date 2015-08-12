@@ -1,0 +1,31 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink">
+
+  <image xlink:href='/webdevchallenge/assets/focus/iphone.png'></image>
+
+  <a>
+    <line x1='100' y1='295' x2='-125' y2='390' class='ln1'></line>
+    <circle class='pt1 pt-out'></circle>
+    <circle class='pt1 pt-in'></circle>
+  </a>
+
+  <a>
+    <line x1='250' y1='195' x2='375' y2='360' class='ln2'></line>
+    <circle class='pt2 pt-out'></circle>
+    <circle class='pt2 pt-in'></circle>
+  </a>
+
+  <a>
+    <line x1='135' y1='525' x2='-185' y2='557' class='ln3'></line>
+    <circle class='pt3 pt-out'></circle>
+    <circle class='pt3 pt-in'></circle>
+  </a>
+
+  <a>
+    <line x1='235' y1='425' x2='370' y2='540' class='ln4'></line>
+    <circle class='pt4 pt-out'></circle>
+    <circle class='pt4 pt-in'></circle>
+  </a>
+
+</svg>

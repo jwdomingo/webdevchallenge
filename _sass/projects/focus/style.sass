@@ -179,7 +179,6 @@ section
       +position(fixed, 378px 5% 0 auto)
       margin-right: 20px
       z-index: 3
-      border: 1px red solid
       overflow-x: visible
       overflow-y: hidden
       background:
@@ -200,7 +199,10 @@ section
     .screen
       right: -15%
 
-  svg#feature
+  object
+    +size(360px 740px)
+
+  #feature
     +size(360px 740px)
     position: absolute
     z-index: 2
@@ -208,152 +210,153 @@ section
     left: 50%
     margin-left: -180px
     overflow: visible
-
-    image
-      x: 0
-      y: 0
-      +size(360px 740px)
-      +transition(1s)
-
-    @media screen and (max-width: 1200px)
-      +size(280px 575.555556px)
-      margin-left: -140px
-      top: 375px
-
+    
+    svg
       image
-        +size(280px 575.555556px)
+        x: 0
+        y: 0
+        +size(360px 740px)
+        +transition(1s)
 
-    @media screen and (max-width: 992px)
-      +size(225px 462.5px)
-      margin-left: -112.5px
-      top: 310px
-
-      image
-        +size(225px 462.5px)
-
-    @media screen and (max-width: 768px)
-      margin-left: 0
-      left: auto
-      right: 5%
-
-    @media screen and (max-width: 575px)
-      +size(175px 359.722222px)
-      top: 190px
-
-      image
-        +size(175px 359.722222px)
-
-    @media screen and (max-width: 380px)
-      right: -15%
-
-
-    a
-      cursor: pointer
-
-      &:active, &:hover, &:focus
-        line
-          opacity: 1
-
-        circle
-          +transition
-          &.pt-out:hover
-            r: 20px
-            fill: red
-          &.pt-out:hover + .pt-in
-            r: 6px
-            fill: $accent
-          &.pt-in:hover
-            r: 6px
-            fill: $accent
-
-      line
-        stroke: black
-        stroke-width: 1
-        opacity: 0
-        +transition(.3s)
-
-        &[class*='ln']
-          +transform(translate(0px, 30px))
-        &.ln1
-          +transform(translate(0px, 20px))
-
-      circle
-        +transition(1.5s)
-
-        &.pt-in
-          r: 7px
-          fill: #f6f6f6
-
-        &.pt-out
-          r: 10px
-          fill: white
-          fill-opacity: 0.25
-
-        &[class*='pt']
-          +transform(translate(0px, 30px))
-
-        &.pt1
-          cx: 100px
-          cy: 295px
-          +transform(translate(0px, 20px))
-        &.pt2
-          cx: 250px
-          cy: 195px
-        &.pt3
-          cx: 135px
-          cy: 525px
-        &.pt4
-          cx: 235px
-          cy: 425px
-
-      // Responsive SVG lines and circles
       @media screen and (max-width: 1200px)
-        line
-          &.ln1
-            +transform(translate(0px, 20px) scale(0.7,0.6))
-          &.ln2
-            +transform(translate(-79px, 295px) scale(1,-0.1))
-          &.ln3
-            +transform(translate(5px, -49px) scale(0.8,0.9))
-          &.ln4
-            +transform(translate(45px, 120px) scale(0.7,0.6))
+        +size(280px 575.555556px)
+        margin-left: -140px
+        top: 375px
 
-        circle
-          +transition(1.5s)
-          &.pt1
-            +transform(translate(-27px, -99px))
-          &.pt2
-            +transform(translate(-77px, 80px))
-          &.pt3
-            +transform(translate(-22px, -101px))
-          &.pt4
-            +transform(translate(-20px, -46px))
+        image
+          +size(280px 575.555556px)
 
       @media screen and (max-width: 992px)
+        +size(225px 462.5px)
+        margin-left: -112.5px
+        top: 310px
+
+        image
+          +size(225px 462.5px)
+
+      @media screen and (max-width: 768px)
+        margin-left: 0
+        left: auto
+        right: 5%
+
+      @media screen and (max-width: 575px)
+        +size(175px 359.722222px)
+        top: 190px
+
+        image
+          +size(175px 359.722222px)
+
+      @media screen and (max-width: 380px)
+        right: -15%
+
+
+      a
+        cursor: pointer
+
+        &:active, &:hover, &:focus
+          line
+            opacity: 1
+
+          circle
+            +transition
+            &.pt-out:hover
+              r: 20px
+              fill: red
+            &.pt-out:hover + .pt-in
+              r: 6px
+              fill: $accent
+            &.pt-in:hover
+              r: 6px
+              fill: $accent
+
         line
+          stroke: black
+          stroke-width: 1
+          opacity: 0
+          +transition(.3s)
+
+          &[class*='ln']
+            +transform(translate(0px, 30px))
           &.ln1
-            +transform(translate(40px, 40px) scale(0.5,0.4))
-          &.ln2
-            +transform(translate(-25px, 240px) scale(0.7,-0.1))
-          &.ln3
-            +transform(translate(-5px, -150px) scale(0.4,1))
-          &.ln4
-            +transform(translate(-65px, 80px) scale(0.8,0.6))
+            +transform(translate(0px, 20px))
 
         circle
           +transition(1.5s)
-          &.pt1
-            +transform(translate(-11px, -137px))
-          &.pt2
-            +transform(translate(-100px, 25px))
-          &.pt3
-            +transform(translate(-84px, -151px))
-          &.pt4
-            +transform(translate(-115px, -92px))
 
-      @media screen and (max-width: 768px)
-        line, circle
-          display: none
+          &.pt-in
+            r: 7px
+            fill: #f6f6f6
+
+          &.pt-out
+            r: 10px
+            fill: white
+            fill-opacity: 0.25
+
+          &[class*='pt']
+            +transform(translate(0px, 30px))
+
+          &.pt1
+            cx: 100px
+            cy: 295px
+            +transform(translate(0px, 20px))
+          &.pt2
+            cx: 250px
+            cy: 195px
+          &.pt3
+            cx: 135px
+            cy: 525px
+          &.pt4
+            cx: 235px
+            cy: 425px
+
+        // Responsive SVG lines and circles
+        @media screen and (max-width: 1200px)
+          line
+            &.ln1
+              +transform(translate(0px, 20px) scale(0.7,0.6))
+            &.ln2
+              +transform(translate(-79px, 295px) scale(1,-0.1))
+            &.ln3
+              +transform(translate(5px, -49px) scale(0.8,0.9))
+            &.ln4
+              +transform(translate(45px, 120px) scale(0.7,0.6))
+
+          circle
+            +transition(1.5s)
+            &.pt1
+              +transform(translate(-27px, -99px))
+            &.pt2
+              +transform(translate(-77px, 80px))
+            &.pt3
+              +transform(translate(-22px, -101px))
+            &.pt4
+              +transform(translate(-20px, -46px))
+
+        @media screen and (max-width: 992px)
+          line
+            &.ln1
+              +transform(translate(40px, 40px) scale(0.5,0.4))
+            &.ln2
+              +transform(translate(-25px, 240px) scale(0.7,-0.1))
+            &.ln3
+              +transform(translate(-5px, -150px) scale(0.4,1))
+            &.ln4
+              +transform(translate(-65px, 80px) scale(0.8,0.6))
+
+          circle
+            +transition(1.5s)
+            &.pt1
+              +transform(translate(-11px, -137px))
+            &.pt2
+              +transform(translate(-100px, 25px))
+            &.pt3
+              +transform(translate(-84px, -151px))
+            &.pt4
+              +transform(translate(-115px, -92px))
+
+        @media screen and (max-width: 768px)
+          line, circle
+            display: none
 
   // Product Descriptions
 
