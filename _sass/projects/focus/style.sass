@@ -181,6 +181,7 @@ section
       z-index: 3
       overflow-x: visible
       overflow-y: hidden
+      +transition(1s)
       background:
         image: url('http://longstreet.typepad.com/.a/6a00d83542d51e69e2016766549ec3970b-pi')
         position: top center
@@ -188,6 +189,9 @@ section
         attachment: local
       .contents
         +size(100% 2700px)
+
+      @media screen and (min-color-index:0) and (-webkit-min-device-pixel-ratio:0)
+        background-image: none
 
   @media screen and (max-width: 575px)
     .screen
@@ -203,52 +207,62 @@ section
     +size(360px 740px)
 
   #feature
-    +size(360px 740px)
     position: absolute
     z-index: 2
     top: 370px
     left: 50%
     margin-left: -180px
-    overflow: visible
-    
+    padding: 0
+    +transition(1s)
+
+    // Responsive Feature Image
+    @media screen and (max-width: 1200px)
+      margin-left: -140px
+      top: 375px
+    @media screen and (max-width: 992px)
+      margin-left: -112.5px
+      top: 310px
+    @media screen and (max-width: 768px)
+      margin-left: 0
+      left: auto
+      right: 5%
+    @media screen and (max-width: 575px)
+      top: 190px
+    @media screen and (max-width: 380px)
+      right: -15%
+
+    @media screen and (min-color-index:0) and (-webkit-min-device-pixel-ratio:0)
+      background:
+        image: url('/webdevchallenge/assets/focus/iphone.png')
+        size: 100%
+        repeat: no-repeat
+
     svg
+      +size(360px 740px)
+      overflow: visible
+
       image
         x: 0
         y: 0
         +size(360px 740px)
-        +transition(1s)
 
       @media screen and (max-width: 1200px)
         +size(280px 575.555556px)
-        margin-left: -140px
-        top: 375px
 
         image
           +size(280px 575.555556px)
 
       @media screen and (max-width: 992px)
         +size(225px 462.5px)
-        margin-left: -112.5px
-        top: 310px
 
         image
           +size(225px 462.5px)
 
-      @media screen and (max-width: 768px)
-        margin-left: 0
-        left: auto
-        right: 5%
-
       @media screen and (max-width: 575px)
         +size(175px 359.722222px)
-        top: 190px
 
         image
           +size(175px 359.722222px)
-
-      @media screen and (max-width: 380px)
-        right: -15%
-
 
       a
         cursor: pointer
@@ -666,7 +680,7 @@ footer
 // MOBILE LAYOUT HELPER //
 //////////////////////////
 @media screen and (max-width: 768px)
-  svg#feature
+  #feature
     position: fixed !important
     z-index: -2
 
