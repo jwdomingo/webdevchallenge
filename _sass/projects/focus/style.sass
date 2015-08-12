@@ -663,6 +663,9 @@ footer
   background-color: $accent
   padding: 100px 0 40px
 
+  @media screen and (max-width: 768px)
+    padding: 10px 0
+
   position: fixed
   z-index: -1
   bottom: 0
@@ -673,8 +676,12 @@ footer
     margin: 0 auto
     text-align: center
 
-    ul li a
-      color: $primary
+    ul.nav.navbar-nav
+      width: 100%
+      margin: 0
+
+      li a
+        color: $primary
 
 //////////////////////////
 // MOBILE LAYOUT HELPER //
