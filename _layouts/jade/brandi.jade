@@ -17,15 +17,34 @@ html(lang="en")
   body
     header
       .container.text-center
-         h1 Meet Brandi!
-         h2.text-lowercase /Creative One Page Template.
-         h6 We are a team of professionals
+        h1 Meet Brandi!
+        h2.text-lowercase <span>/Creative</span> One Page Template.
+        h6 <span>We are a team of professionals</span>
+         
+        ul.list-inline
+          li: .frame: i.fa.fa-twitter
+          li: .frame: i.fa.fa-facebook
+          li: .frame: i.fa.fa-google-plus
+          li: .frame: i.fa.fa-dribbble
      
+        nav.navbar.navbar-inverse.navbar-fixed-top
+          .container
+            .navbar-header
+              button.navbar-toggle(type='button', data-toggle'collapse', data-target'#menu-collapse')
+              a.navbar-brand(href='#') Brandi <span>I am your tag line</span>
+            #menu-collapse.collapse.navbar-collapse
+              ul.nav.navbar-nav.navbar-right
+                li: a(href='#') Home
+                li: a(href='#') Features
+                li: a(href='#') Works
+                li: a(href='#') Team
+                li: a(href='#') Contact
+    
     section#features
       .container
         .row
           .col-xs-12.text-center
-            h3.text-uppercase Features
+            h3.text-uppercase.text-center Features
             
           .col-xs-4
             h4 Branding
