@@ -26,6 +26,9 @@ layout: null
         {% endfor %}
         <challenge>{{ post.challenge }}</challenge>
         <project>{{ post.challenge }}</project>
+        {% for lbl in post.source-labels %}
+        <label>{{ lbl | xml_escape }}</label>
+        {% endfor %}
         {% for src in post.sources %}
         <source>{{ src | xml_escape }}</source>
         {% endfor %}
