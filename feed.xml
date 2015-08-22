@@ -24,6 +24,8 @@ layout: null
         {% for cat in post.categories %}
         <category>{{ cat | xml_escape }}</category>
         {% endfor %}
+        <challenge>{{ post.challenge }}</challenge>
+        <project>{{ post.challenge }}</project>
       </item>
     {% endfor %}
   </channel>
