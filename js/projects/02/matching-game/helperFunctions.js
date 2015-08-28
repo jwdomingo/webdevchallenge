@@ -67,8 +67,8 @@ var renderGameBoard = function(gameBoard) {
 }
 
 var clickHandler = function(tile) {
-  var color = tile.css('background-color');
-  console.log(tile.data('position'));
+  //var color = tile.css('background-color');
+  //console.log(tile.data('position'));
   tile.css('background-color','black');
   //console.log("hi, I'm " + height + "px tall");
 }

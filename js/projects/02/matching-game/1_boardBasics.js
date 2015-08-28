@@ -13,7 +13,7 @@
   // Since all of our code will be written inside the local scope of a function, you won't be able to just type a variable name directly in the console and see its value (remember, the console only has access to global scope variables). So, in order to see the values of the variables you declare you'll need to make use of console.log to print them to the console. Writing all your console.logs in your .js file here is a good pattern to get used to.
 
   // The only thing we want on our global scope is our gameBoard object. We need to make gameBoard a global variable so that all the JavaScript files in our program can access it. Let's explicitly put it on the window object.
-  window.gameBoard = makeGameBoard(8);
+  window.gameBoard = makeGameBoard(5);
 
   // You might be wondering where the makeGameBoard function came from and why we can just invoke it even though we haven't seen it declared in this file... this function was defined in the helperFunctions.js file and it was declared in the global scope, so it's accessible anywhere in our JavaScript code.
 
@@ -46,15 +46,15 @@
     // What is it that's being passed into each invocation of our callback? Can we name this parameter something obvious that makes it clear what it represents?
     // Let's change every square to a different color of your choosing.
 
-    // _.each(gameBoard, function(row) {
-    //     _.each(row, function(tile, i) {
-    //       if ( i % 2 === 0 ) {
-    //         tile.color = 'DarkSeaGreen ';
-    //       } else {
-    //         tile.color = 'IndianRed';
-    //       }
-    //     });
-    // });
+    _.each(gameBoard, function(row) {
+        _.each(row, function(tile, i) {
+          if ( i % 2 === 0 ) {
+            tile.color = 'DarkSeaGreen ';
+          } else {
+            tile.color = 'IndianRed';
+          }
+        });
+    });
 
       // If you're not familiar with colors in JS, you can do this in three main ways: through rgb values, hex values (the way we've done it right now), or just typing in a color name like 'orange'.
         // Random aside: hex values are really useful if you're trying to create random colors :)
@@ -93,6 +93,19 @@
 
       // Great! Now that we've changed the color of each square to orange using for loops, let's transition this over to functional programming.
         // First, replace the inner for loop with an each statement that changes the color of each square to blue. Be sure to write a new each statement for this- don't just copy and paste the one you've written up above. We want you to get as much practice typing these out as possible!
+
+        var rainbow = ['red', 'orange', 'yellow', 'green', 'blue', 'purple', 'indigo', 'red', 'orange'];
+
+        _.each(gameBoard, function(row, i, list) {
+          list[i] = _.map(row, function(tile, j) {
+            return {
+              position: [i, j],
+              color: '#' + Math.ceil(Math.random() * 16777216).toString(16),
+              gamePiece: '',
+              text: ''
+            }
+          });
+        });
 
         // Now that all the squares are changed to blue, let's replace the outer for loop with an each statement. Again, write a whole new one from scratch here.
           // Change the color in the inner each statement to green, just to make sure everything's working.
